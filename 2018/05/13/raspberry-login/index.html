@@ -79,17 +79,22 @@
 
 
 
-<meta name="description" content="聚焦人的">
+<meta name="description" content="在没有显示器的情况下如何获取raspberry树莓派的IP地址呢？一般的话有三种解决方法 1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址这种方法比较简单，一目了然，但是对于没有路由器管理员权限的情况下比较难实现，特别是在校的学生和在外租房子的同学们 2、通过arp -a 命令window环境下将树莓派和计算机网口通过网线连接，且在计算机网口设置固定IP地址这样通过cmd">
 <meta property="og:type" content="article">
-<meta property="og:title" content="focus">
-<meta property="og:url" content="http://yoursite.com/2018/05/04/focus/index.html">
+<meta property="og:title" content="raspberry login">
+<meta property="og:url" content="http://yoursite.com/2018/05/13/raspberry-login/index.html">
 <meta property="og:site_name" content="lumang">
-<meta property="og:description" content="聚焦人的">
+<meta property="og:description" content="在没有显示器的情况下如何获取raspberry树莓派的IP地址呢？一般的话有三种解决方法 1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址这种方法比较简单，一目了然，但是对于没有路由器管理员权限的情况下比较难实现，特别是在校的学生和在外租房子的同学们 2、通过arp -a 命令window环境下将树莓派和计算机网口通过网线连接，且在计算机网口设置固定IP地址这样通过cmd">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-04T03:07:28.063Z">
+<meta property="og:image" content="http://yoursite.com/2018/05/13/images/3-1.png">
+<meta property="og:image" content="http://yoursite.com/2018/05/13/images/get-port.png">
+<meta property="og:image" content="http://yoursite.com/2018/05/13/images/raspberry.png">
+<meta property="og:image" content="http://yoursite.com/2018/05/13/images/login.png">
+<meta property="og:updated_time" content="2018-05-13T14:58:14.261Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="focus">
-<meta name="twitter:description" content="聚焦人的">
+<meta name="twitter:title" content="raspberry login">
+<meta name="twitter:description" content="在没有显示器的情况下如何获取raspberry树莓派的IP地址呢？一般的话有三种解决方法 1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址这种方法比较简单，一目了然，但是对于没有路由器管理员权限的情况下比较难实现，特别是在校的学生和在外租房子的同学们 2、通过arp -a 命令window环境下将树莓派和计算机网口通过网线连接，且在计算机网口设置固定IP地址这样通过cmd">
+<meta name="twitter:image" content="http://yoursite.com/2018/05/13/images/3-1.png">
 
 
 
@@ -119,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/04/focus/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/13/raspberry-login/"/>
 
 
 
 
 
-  <title>focus | lumang</title>
+  <title>raspberry login | lumang</title>
   
 
 
@@ -244,7 +249,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/04/focus/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/13/raspberry-login/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="lumang">
@@ -261,7 +266,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">focus</h1>
+          <h1 class="post-title" itemprop="name headline">raspberry login</h1>
         
 
         <div class="post-meta">
@@ -273,8 +278,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-04T09:59:45+08:00">
-                2018-05-04
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-13T22:31:57+08:00">
+                2018-05-13
               </time>
             
 
@@ -305,7 +310,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  4
+                  468
                 </span>
               
 
@@ -321,7 +326,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -342,7 +347,16 @@
       
 
       
-        <h1 id="聚焦"><a href="#聚焦" class="headerlink" title="聚焦"></a>聚焦</h1><p>人的</p>
+        <p>在没有显示器的情况下如何获取raspberry树莓派的IP地址呢？<br>一般的话有三种解决方法</p>
+<h1 id="1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址"><a href="#1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址" class="headerlink" title="1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址"></a>1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址</h1><p>这种方法比较简单，一目了然，但是对于没有路由器管理员权限的情况下比较难实现，特别是在校的学生和在外租房子的同学们</p>
+<h1 id="2、通过arp-a-命令"><a href="#2、通过arp-a-命令" class="headerlink" title="2、通过arp -a 命令"></a>2、通过arp -a 命令</h1><p>window环境下将树莓派和计算机网口通过网线连接，且在计算机网口设置固定IP地址<br>这样通过cmd 窗口输入 arp -a 命令后可以查看到树莓派的IP地址，这个比上面路由器的方案相比就比较简单了，但是还有有问题，因为arp 缓存问题，有的时候根本无法查到树莓派IP地址，这就引出了第三种方式了。通过网络调试神奇wireshark软件</p>
+<h1 id="3、通过Wireshark软件来获取树莓派的IP地址"><a href="#3、通过Wireshark软件来获取树莓派的IP地址" class="headerlink" title="3、通过Wireshark软件来获取树莓派的IP地址"></a>3、通过Wireshark软件来获取树莓派的IP地址</h1><p>这里不需要了解太多Wireshark的原理,只需要了解简单网络基本常识即可，具体来看我解决问题的步骤</p>
+<ul>
+<li>首先跟第二种方法中的类似将树莓派和计算机连接并把计算机网卡设置为固定IP地址<br><img src="../images/3-1.png" alt="Alt text"></li>
+<li>然后打开wireshark软件选择捕获接口为本地链接，软件开始捕获计算机网口和外界的通信数据了<br><img src="../images/get-port.png" alt="Alt text"></li>
+<li>将树莓派通电，通电以后树莓派上就会显示一系列通信数据，大概1-2分钟后查看是否有Raspber开头的MAC地址如图，可以看到send MAC address 和 send IP address<br><img src="../images/raspberry.png" alt="Alt text"></li>
+<li>将计算机的IP地址改为和raspberry 相同网段的地址就可以登录到raspberry了<br><img src="../images/login.png" alt="Alt text"></li>
+</ul>
 
       
     </div>
@@ -400,7 +414,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yoursite.com/2018/05/04/focus/" title="focus">http://yoursite.com/2018/05/04/focus/</a>
+    <a href="http://yoursite.com/2018/05/13/raspberry-login/" title="raspberry login">http://yoursite.com/2018/05/13/raspberry-login/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -422,8 +436,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/04/ffmpeg/" rel="next" title="ffmpeg">
-                <i class="fa fa-chevron-left"></i> ffmpeg
+              <a href="/2018/05/13/opencv-arduino-project/" rel="next" title="opencv arduino project">
+                <i class="fa fa-chevron-left"></i> opencv arduino project
               </a>
             
           </div>
@@ -431,10 +445,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/04/debug/" rel="prev" title="debug">
-                debug <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -577,7 +587,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#聚焦"><span class="nav-number">1.</span> <span class="nav-text">聚焦</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址"><span class="nav-number">1.</span> <span class="nav-text">1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2、通过arp-a-命令"><span class="nav-number">2.</span> <span class="nav-text">2、通过arp -a 命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3、通过Wireshark软件来获取树莓派的IP地址"><span class="nav-number">3.</span> <span class="nav-text">3、通过Wireshark软件来获取树莓派的IP地址</span></a></li></ol></div>
             
 
           </div>

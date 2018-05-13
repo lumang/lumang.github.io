@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="调试九法不到200页，简单明了，开发人员，人人必备的调试技巧任何人都要需要读，## 如何快速找到工作中的错误 ##两件重要的事情：  如果查找bug花费了大量时间，那么原因可能是忽略了某个基本的，最重要的规则，一旦应用了那条规则，就会很快找到问题 善于快速调试的人已经深刻理解并应用了这些规则，而那些很难理解或使用这些规则的人则很难找到bug  关键是 记住并应用这些规则 调试艺术是门科学 调试不仅">
+<meta name="description" content="调试九法本文阅读时间3分钟每个开发者都必须都的一项技术，-debug，最近读了一本关于调试的书分享给大家，书的内容不到200页，一口气读下来，估计需要一个小时，速度内容简单明了，主要是作者20多年的工作中调试经验的总结,作者作为一名软件开发人员的工作调试经验，同样适用其他领域开发人员，同时，解决问题的思路也适用于不同岗位的人思考借鉴，人人必备的调试技巧。全书分为三个主要部分：九种调试规则介绍，一个">
 <meta property="og:type" content="article">
 <meta property="og:title" content="debug">
 <meta property="og:url" content="http://yoursite.com/2018/05/04/debug/index.html">
 <meta property="og:site_name" content="lumang">
-<meta property="og:description" content="调试九法不到200页，简单明了，开发人员，人人必备的调试技巧任何人都要需要读，## 如何快速找到工作中的错误 ##两件重要的事情：  如果查找bug花费了大量时间，那么原因可能是忽略了某个基本的，最重要的规则，一旦应用了那条规则，就会很快找到问题 善于快速调试的人已经深刻理解并应用了这些规则，而那些很难理解或使用这些规则的人则很难找到bug  关键是 记住并应用这些规则 调试艺术是门科学 调试不仅">
+<meta property="og:description" content="调试九法本文阅读时间3分钟每个开发者都必须都的一项技术，-debug，最近读了一本关于调试的书分享给大家，书的内容不到200页，一口气读下来，估计需要一个小时，速度内容简单明了，主要是作者20多年的工作中调试经验的总结,作者作为一名软件开发人员的工作调试经验，同样适用其他领域开发人员，同时，解决问题的思路也适用于不同岗位的人思考借鉴，人人必备的调试技巧。全书分为三个主要部分：九种调试规则介绍，一个">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-04T03:07:24.787Z">
+<meta property="og:updated_time" content="2018-05-13T15:00:02.189Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="debug">
-<meta name="twitter:description" content="调试九法不到200页，简单明了，开发人员，人人必备的调试技巧任何人都要需要读，## 如何快速找到工作中的错误 ##两件重要的事情：  如果查找bug花费了大量时间，那么原因可能是忽略了某个基本的，最重要的规则，一旦应用了那条规则，就会很快找到问题 善于快速调试的人已经深刻理解并应用了这些规则，而那些很难理解或使用这些规则的人则很难找到bug  关键是 记住并应用这些规则 调试艺术是门科学 调试不仅">
+<meta name="twitter:description" content="调试九法本文阅读时间3分钟每个开发者都必须都的一项技术，-debug，最近读了一本关于调试的书分享给大家，书的内容不到200页，一口气读下来，估计需要一个小时，速度内容简单明了，主要是作者20多年的工作中调试经验的总结,作者作为一名软件开发人员的工作调试经验，同样适用其他领域开发人员，同时，解决问题的思路也适用于不同岗位的人思考借鉴，人人必备的调试技巧。全书分为三个主要部分：九种调试规则介绍，一个">
 
 
 
@@ -305,7 +305,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  253
+                  935
                 </span>
               
 
@@ -321,7 +321,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  3
                 </span>
               
             </div>
@@ -342,15 +342,53 @@
       
 
       
-        <h1 id="调试九法"><a href="#调试九法" class="headerlink" title="调试九法"></a>调试九法</h1><p>不到200页，简单明了，开发人员，人人必备的调试技巧<br>任何人都要需要读，## 如何快速找到工作中的错误 ##<br>两件重要的事情：</p>
+        <h1 id="调试九法"><a href="#调试九法" class="headerlink" title="调试九法"></a>调试九法</h1><h4 id="本文阅读时间3分钟"><a href="#本文阅读时间3分钟" class="headerlink" title="本文阅读时间3分钟"></a>本文阅读时间3分钟</h4><p>每个开发者都必须都的一项技术，-debug，最近读了一本关于调试的书分享给大家，书的内容不到200页，一口气读下来，估计需要一个小时，速度内容简单明了，主要是作者20多年的工作中调试经验的总结,作者作为一名软件开发人员的工作调试经验，同样适用其他领域开发人员，同时，解决问题的思路也适用于不同岗位的人思考借鉴，人人必备的调试技巧。全书分为三个主要部分：九种调试规则介绍，一个综合运用实例，总结陈词。</p>
+<p>书中作者总结工作中两件重要的事情：</p>
 <ul>
 <li>如果查找bug花费了大量时间，那么原因可能是忽略了某个基本的，最重要的规则，一旦应用了那条规则，就会很快找到问题</li>
 <li>善于快速调试的人已经深刻理解并应用了这些规则，而那些很难理解或使用这些规则的人则很难找到bug</li>
 </ul>
-<p>关键是 记住并应用这些规则</p>
-<p>调试艺术是门科学</p>
-<p>调试不仅仅是故障检修<br>调试，查明为什么一个设计没有按计划工作</p>
-<h2 id="总体规划"><a href="#总体规划" class="headerlink" title="总体规划"></a>总体规划</h2><h2 id="理解系统"><a href="#理解系统" class="headerlink" title="理解系统"></a>理解系统</h2><h2 id="制造失败"><a href="#制造失败" class="headerlink" title="制造失败"></a>制造失败</h2><h2 id="不要想，而要看"><a href="#不要想，而要看" class="headerlink" title="不要想，而要看"></a>不要想，而要看</h2><h2 id="分而治之"><a href="#分而治之" class="headerlink" title="分而治之"></a>分而治之</h2><h2 id="一次只改一个地方"><a href="#一次只改一个地方" class="headerlink" title="一次只改一个地方"></a>一次只改一个地方</h2><h2 id="保持审计跟踪"><a href="#保持审计跟踪" class="headerlink" title="保持审计跟踪"></a>保持审计跟踪</h2><h2 id="坚持插头"><a href="#坚持插头" class="headerlink" title="坚持插头"></a>坚持插头</h2><h2 id="获得全新的观点"><a href="#获得全新的观点" class="headerlink" title="获得全新的观点"></a>获得全新的观点</h2><h2 id="如果你不修复bug，它依然存在"><a href="#如果你不修复bug，它依然存在" class="headerlink" title="如果你不修复bug，它依然存在"></a>如果你不修复bug，它依然存在</h2>
+<p>对于调试技巧作者的观点是：</p>
+<ul>
+<li>关键是 记住并应用这些规则，调试艺术是门科学</li>
+<li>调试不仅仅是故障检修</li>
+<li>调试，查明为什么一个设计没有按计划工作</li>
+</ul>
+<p>作者通过自己多年的实际工作经验，总结出开发测试工作debug的经验<br>这本书值得推荐给任何人来读， <strong>如何快速找到工作中的错误</strong><br>这里分享下读书笔记，思维导图，关注knowiot公众号，后台回复’debug’获取pdf文件和思维导图笔记</p>
+<h2 id="理解系统"><a href="#理解系统" class="headerlink" title="理解系统"></a>理解系统</h2><p>这是最重要的一个方法</p>
+<ul>
+<li>当所有方法都不管用的时候，读读编程手册</li>
+<li>知道系统的原理以及如何设计，最重要的是为什么这么设计，如果你们有理解系统的某个部分，那么这部分将会出问题-墨菲定律</li>
+<li>理解系统不等于理解问题，当时解决问题的前提是理解系统<h2 id="制造失败"><a href="#制造失败" class="headerlink" title="制造失败"></a>制造失败</h2></li>
+<li>通过还原观察错误，查找线索，确认是否修复</li>
+<li>从头开始</li>
+<li>引发失败</li>
+<li>不要模拟失败</li>
+<li>查找不受你控制条件</li>
+<li>记录每一件事情，并找到间歇性bug的特征</li>
+<li>不要过于相信统计数据</li>
+<li>要认识到那是可能发生的</li>
+<li>永远不要丢掉一个调试工具   <h2 id="不要想，而要看"><a href="#不要想，而要看" class="headerlink" title="不要想，而要看"></a>不要想，而要看</h2></li>
+<li>凭空想象，问题可能有几千条原因，而实际的原因只有去看了才能发现<h2 id="分而治之"><a href="#分而治之" class="headerlink" title="分而治之"></a>分而治之</h2></li>
+<li>问题分解，逐次逼近，问题会水落石出<h2 id="一次只改一个地方"><a href="#一次只改一个地方" class="headerlink" title="一次只改一个地方"></a>一次只改一个地方</h2></li>
+<li>如果更改没有起到预期的作用，那就改回来好了<h2 id="保持审计跟踪"><a href="#保持审计跟踪" class="headerlink" title="保持审计跟踪"></a>保持审计跟踪</h2></li>
+<li>将操作步骤，顺序，结果全部记录下来</li>
+<li>任何细节都是可能是重要的</li>
+<li>把事情记录下来<h2 id="检查插头"><a href="#检查插头" class="headerlink" title="检查插头"></a>检查插头</h2></li>
+<li>避免显而易见的错误，假设错误是最容易修复的错误<h2 id="获得全新的观点"><a href="#获得全新的观点" class="headerlink" title="获得全新的观点"></a>获得全新的观点</h2></li>
+<li>休息一下，喝杯咖啡，和同事聊聊天</li>
+<li>征求别人的意见</li>
+<li>获取专业的知识</li>
+<li>听取别人的境遇</li>
+<li>帮助无处不在</li>
+<li>放下面子<h2 id="如果你不修复bug，它依然存在"><a href="#如果你不修复bug，它依然存在" class="headerlink" title="如果你不修复bug，它依然存在"></a>如果你不修复bug，它依然存在</h2></li>
+<li>查证问题确实已被修复</li>
+<li>bug 从来不会自己消失，如果你不修复他，它还会在那。</li>
+<li>从根本上解决问题</li>
+<li>对过程进行修复</li>
+</ul>
+<p><strong>关注公众号，后台回复’debug’获取《调试九法》pdf文件和思维导图笔记 :)</strong></p>
+
       
     </div>
     
@@ -522,7 +560,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -584,7 +622,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#调试九法"><span class="nav-number">1.</span> <span class="nav-text">调试九法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#总体规划"><span class="nav-number">1.1.</span> <span class="nav-text">总体规划</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#理解系统"><span class="nav-number">1.2.</span> <span class="nav-text">理解系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#制造失败"><span class="nav-number">1.3.</span> <span class="nav-text">制造失败</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不要想，而要看"><span class="nav-number">1.4.</span> <span class="nav-text">不要想，而要看</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分而治之"><span class="nav-number">1.5.</span> <span class="nav-text">分而治之</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一次只改一个地方"><span class="nav-number">1.6.</span> <span class="nav-text">一次只改一个地方</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#保持审计跟踪"><span class="nav-number">1.7.</span> <span class="nav-text">保持审计跟踪</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#坚持插头"><span class="nav-number">1.8.</span> <span class="nav-text">坚持插头</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#获得全新的观点"><span class="nav-number">1.9.</span> <span class="nav-text">获得全新的观点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如果你不修复bug，它依然存在"><span class="nav-number">1.10.</span> <span class="nav-text">如果你不修复bug，它依然存在</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#调试九法"><span class="nav-number">1.</span> <span class="nav-text">调试九法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#本文阅读时间3分钟"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">本文阅读时间3分钟</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#理解系统"><span class="nav-number">1.1.</span> <span class="nav-text">理解系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#制造失败"><span class="nav-number">1.2.</span> <span class="nav-text">制造失败</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不要想，而要看"><span class="nav-number">1.3.</span> <span class="nav-text">不要想，而要看</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分而治之"><span class="nav-number">1.4.</span> <span class="nav-text">分而治之</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一次只改一个地方"><span class="nav-number">1.5.</span> <span class="nav-text">一次只改一个地方</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#保持审计跟踪"><span class="nav-number">1.6.</span> <span class="nav-text">保持审计跟踪</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#检查插头"><span class="nav-number">1.7.</span> <span class="nav-text">检查插头</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#获得全新的观点"><span class="nav-number">1.8.</span> <span class="nav-text">获得全新的观点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如果你不修复bug，它依然存在"><span class="nav-number">1.9.</span> <span class="nav-text">如果你不修复bug，它依然存在</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -619,7 +657,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">4.0k</span>
+    <span title="Site words total count">5.5k</span>
   
 </div>
 
@@ -639,7 +677,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共4.0k字</span>
+  <span class="post-count">博客全站共5.5k字</span>
 </div>
 
         
