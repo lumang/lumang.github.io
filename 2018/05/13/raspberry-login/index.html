@@ -79,21 +79,21 @@
 
 
 
-<meta name="description" content="在没有显示器的情况下如何获取raspberry树莓派的IP地址呢？一般的话有三种解决方法 1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址这种方法比较简单，一目了然，但是对于没有路由器管理员权限的情况下比较难实现，特别是在校的学生和在外租房子的同学们 2、通过arp -a 命令window环境下将树莓派和计算机网口通过网线连接，且在计算机网口设置固定IP地址这样通过cmd">
+<meta name="description" content="现在树莓派作为微型卡片电脑，越来越多的应用到各种产品和创意设计中，树莓派在实际使用通常是无显示器，通过ssh远程操作那么问题来了在没有显示器的情况下如何获取raspberry树莓派的IP地址呢？一般的话有三种解决方法 1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址这种方法比较简单，一目了然，但是对于没有路由器管理员权限的情况下比较难实现，特别是在校的学生和在外租房子的同学">
 <meta property="og:type" content="article">
 <meta property="og:title" content="raspberry login">
 <meta property="og:url" content="http://yoursite.com/2018/05/13/raspberry-login/index.html">
 <meta property="og:site_name" content="lumang">
-<meta property="og:description" content="在没有显示器的情况下如何获取raspberry树莓派的IP地址呢？一般的话有三种解决方法 1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址这种方法比较简单，一目了然，但是对于没有路由器管理员权限的情况下比较难实现，特别是在校的学生和在外租房子的同学们 2、通过arp -a 命令window环境下将树莓派和计算机网口通过网线连接，且在计算机网口设置固定IP地址这样通过cmd">
+<meta property="og:description" content="现在树莓派作为微型卡片电脑，越来越多的应用到各种产品和创意设计中，树莓派在实际使用通常是无显示器，通过ssh远程操作那么问题来了在没有显示器的情况下如何获取raspberry树莓派的IP地址呢？一般的话有三种解决方法 1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址这种方法比较简单，一目了然，但是对于没有路由器管理员权限的情况下比较难实现，特别是在校的学生和在外租房子的同学">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/05/13/images/3-1.png">
 <meta property="og:image" content="http://yoursite.com/2018/05/13/images/get-port.png">
 <meta property="og:image" content="http://yoursite.com/2018/05/13/images/raspberry.png">
 <meta property="og:image" content="http://yoursite.com/2018/05/13/images/login.png">
-<meta property="og:updated_time" content="2018-05-13T14:58:14.261Z">
+<meta property="og:updated_time" content="2018-05-13T15:17:58.554Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="raspberry login">
-<meta name="twitter:description" content="在没有显示器的情况下如何获取raspberry树莓派的IP地址呢？一般的话有三种解决方法 1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址这种方法比较简单，一目了然，但是对于没有路由器管理员权限的情况下比较难实现，特别是在校的学生和在外租房子的同学们 2、通过arp -a 命令window环境下将树莓派和计算机网口通过网线连接，且在计算机网口设置固定IP地址这样通过cmd">
+<meta name="twitter:description" content="现在树莓派作为微型卡片电脑，越来越多的应用到各种产品和创意设计中，树莓派在实际使用通常是无显示器，通过ssh远程操作那么问题来了在没有显示器的情况下如何获取raspberry树莓派的IP地址呢？一般的话有三种解决方法 1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址这种方法比较简单，一目了然，但是对于没有路由器管理员权限的情况下比较难实现，特别是在校的学生和在外租房子的同学">
 <meta name="twitter:image" content="http://yoursite.com/2018/05/13/images/3-1.png">
 
 
@@ -310,7 +310,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  468
+                  527
                 </span>
               
 
@@ -347,7 +347,7 @@
       
 
       
-        <p>在没有显示器的情况下如何获取raspberry树莓派的IP地址呢？<br>一般的话有三种解决方法</p>
+        <p>现在树莓派作为微型卡片电脑，越来越多的应用到各种产品和创意设计中，树莓派在实际使用通常是无显示器，通过ssh远程操作那么问题来了<br>在没有显示器的情况下如何获取raspberry树莓派的IP地址呢？<br>一般的话有三种解决方法</p>
 <h1 id="1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址"><a href="#1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址" class="headerlink" title="1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址"></a>1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址</h1><p>这种方法比较简单，一目了然，但是对于没有路由器管理员权限的情况下比较难实现，特别是在校的学生和在外租房子的同学们</p>
 <h1 id="2、通过arp-a-命令"><a href="#2、通过arp-a-命令" class="headerlink" title="2、通过arp -a 命令"></a>2、通过arp -a 命令</h1><p>window环境下将树莓派和计算机网口通过网线连接，且在计算机网口设置固定IP地址<br>这样通过cmd 窗口输入 arp -a 命令后可以查看到树莓派的IP地址，这个比上面路由器的方案相比就比较简单了，但是还有有问题，因为arp 缓存问题，有的时候根本无法查到树莓派IP地址，这就引出了第三种方式了。通过网络调试神奇wireshark软件</p>
 <h1 id="3、通过Wireshark软件来获取树莓派的IP地址"><a href="#3、通过Wireshark软件来获取树莓派的IP地址" class="headerlink" title="3、通过Wireshark软件来获取树莓派的IP地址"></a>3、通过Wireshark软件来获取树莓派的IP地址</h1><p>这里不需要了解太多Wireshark的原理,只需要了解简单网络基本常识即可，具体来看我解决问题的步骤</p>
@@ -446,6 +446,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2018/05/14/如何赚钱/" rel="prev" title="如何赚钱">
+                如何赚钱 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -525,7 +529,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">36</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -622,7 +626,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">5.5k</span>
+    <span title="Site words total count">13.6k</span>
   
 </div>
 
@@ -642,7 +646,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共5.5k字</span>
+  <span class="post-count">博客全站共13.6k字</span>
 </div>
 
         

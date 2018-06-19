@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="微信小程序开发-扫描打开蓝牙设备微信小程序开发中硬件部分，如何扫描打开设备蓝牙功能具体的步骤是 小程序 BLE开发之初识GATT 基本概念设备角色首先要明白的是，这两种角色的区分是硬件层面上，而且是成对出现的相对概念： 中心设备（Central device） ：功能相对强大，用来扫描和连接周边设备的，使用周边设备提供的服务，例如手机、平板等 周边设备（Central device） ：功能相对简">
+<meta property="og:type" content="article">
+<meta property="og:title" content="wechat ble 1">
+<meta property="og:url" content="http://yoursite.com/2018/05/27/wechat-ble-1/index.html">
+<meta property="og:site_name" content="lumang">
+<meta property="og:description" content="微信小程序开发-扫描打开蓝牙设备微信小程序开发中硬件部分，如何扫描打开设备蓝牙功能具体的步骤是 小程序 BLE开发之初识GATT 基本概念设备角色首先要明白的是，这两种角色的区分是硬件层面上，而且是成对出现的相对概念： 中心设备（Central device） ：功能相对强大，用来扫描和连接周边设备的，使用周边设备提供的服务，例如手机、平板等 周边设备（Central device） ：功能相对简">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-06-02T13:55:23.709Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="wechat ble 1">
+<meta name="twitter:description" content="微信小程序开发-扫描打开蓝牙设备微信小程序开发中硬件部分，如何扫描打开设备蓝牙功能具体的步骤是 小程序 BLE开发之初识GATT 基本概念设备角色首先要明白的是，这两种角色的区分是硬件层面上，而且是成对出现的相对概念： 中心设备（Central device） ：功能相对强大，用来扫描和连接周边设备的，使用周边设备提供的服务，例如手机、平板等 周边设备（Central device） ：功能相对简">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/05/27/wechat-ble-1/"/>
+
+
+
+
+
+  <title>wechat ble 1 | lumang</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?ad2b2688c5e01f694d34f39199738b43";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband">
+	<a href="https://github.com/lumang"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+	</div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">lumang</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">每天都要保持微笑:)</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/27/wechat-ble-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="lumang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="lumang">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">wechat ble 1</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-27T21:08:17+08:00">
+                2018-05-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,612
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  6
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>微信小程序开发-扫描打开蓝牙设备<br>微信小程序开发中硬件部分，如何扫描打开设备蓝牙功能<br>具体的步骤是</p>
+<p>小程序 BLE开发之初识GATT</p>
+<h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><h2 id="设备角色"><a href="#设备角色" class="headerlink" title="设备角色"></a>设备角色</h2><p>首先要明白的是，这两种角色的区分是硬件层面上，而且是成对出现的相对概念：<br><strong> 中心设备（Central device） </strong>：功能相对强大，用来扫描和连接周边设备的，使用周边设备提供的服务，例如手机、平板等<br><strong> 周边设备（Central device） </strong>：功能相对简单，功耗较小，不停对外广播，被中心设备连接以提供数据的，例如手环、智能体温计等</p>
+<p>其实从最根本上来讲，它应该是在对建立连接的过程不同角色的一种区分。我们知道蓝牙设备要想让别人知道自己的存在，是要不间断的对外放松广播的，而另外一方则需要扫描并回复该广播包，这样才能建立连接，在这个过程中，负责广播的就周边设备(peripheral)，而负责扫描的是中心设备(pCentral)。</p>
+<p>关于两者的连接过程需要注意：</p>
+<p>中心设备可以同时连接多个周边设备。<br>周边设备一旦被连接上，立刻停止广播，断开后继续广播<br>任何时候只能一个设备尝试连接，排队连接。</p>
+<h2 id="GATT"><a href="#GATT" class="headerlink" title="GATT"></a>GATT</h2><p>BLE技术是基于GATT进行通信的，GATT是一种属性传输协议，简单的讲可以认为是一种属性传输的应用层协议。<br>它的结构非常简单：</p>
+<h2 id="GATT结构图"><a href="#GATT结构图" class="headerlink" title="GATT结构图"></a>GATT结构图</h2><p>每个GATT由完成不同功能的Service组成；<br>每个Service由不同的Characteristic组成；<br>每个Characteristic由一个value和一个或者多个Descriptor组成；<br>Service、Characteristic相当于标签（Service相当于他的类别，Characteristic相当于它的名字），而value才真正的包含数据，Descriptor是对这个value进行的说明和描述，当然我们可以从不同角度来描述和说明，因此可以有多个Descriptor.<br>这样子理解可能不够准确，下面我们来举一个简单的例子进行说明：</p>
+<p>常见的小米手环是一个BLE设备，（假设）它包含三个Service,分别是提供设备信息的Service、提供步数的Service、检测心率的Service;<br>而设备信息的service中包含的characteristic包括厂商信息、硬件信息、版本信息等；而心率Service则包括心率characteristic等，而心率characteristic中的value则真正的包含心率的数据，而descriptor则是对该value的描述说明，比如value的单位啊，描述啊，权限啊等。</p>
+<h2 id="GATT-C-S"><a href="#GATT-C-S" class="headerlink" title="GATT C/S"></a>GATT C/S</h2><p>对GATT有了初步的了解，我们知道GATT是一种典型的C/S模式，既然是C/S那么我们就有必要对Server和client进行区分。</p>
+<p><strong>GATT server</strong> vs. <strong>GATT client</strong>。这两种角色存在的阶段则是建立连接之后，根据对话地位的不同进行区分的，很容易理解的是，保有数据的那一方我们称之为GATT server，访问数据的那一方我们称之为GATT client。</p>
+<p>以手机和手表的例子来进行说明，手机和手机建立连接之前，我们都是用手机的蓝牙搜索功能去搜索手表的蓝牙设备，这个过程中很明显手表在进行BLE广播以便其他设备知道自己的存在，它在这个过程中就是peripheral的角色，而手机负责扫描的任务，自然扮演的就是Center了；两者建立了GATT连接后，当手机需要从手表中读取步数等传感器数据时，两者交互的数据是保存在手表中的，因此此时手表就是GATT server的角色，自然手机就作为GATT client；而当手表想要从手机读取短信电话等信息室，数据的保佑者又变成了手机，所以此时手机就是server ，而手表则是client。</p>
+<h2 id="Service-Characteristic"><a href="#Service-Characteristic" class="headerlink" title="Service/Characteristic"></a>Service/Characteristic</h2><p>Characteristic是最小的数据逻辑单元。<br>value、descriptor中存储数据的解析由Server的工程师决定，并无规范，双发按照约定开发。<br>Service/Characteristic均有一个唯一的UUID标识，UUID既有16位的也有128位的，我们需要了解的是16位的UUID是经过蓝牙组织认证的，是需要购买的，当然也有一些通用的16位UUID。<br>例如Heart Rate服务的UUID就是0X180D,代码中表示为0X00001800-0000-1000-8000-00805f9b34fb,其他位为固定的。而128位的UUID则可以自定义。</p>
+<p>应用开发</p>
+<p>1 扫描并发现蓝牙外围设备</p>
+<p>扫描并发现蓝牙外设。如果蓝牙功能未开启，可监听蓝牙状态变化以便自动进入下一步，提升用户体验。</p>
+<p>2 连接蓝牙外围设备</p>
+<p>若之前连接过某个设备，可跳过扫描步骤，直接传入 deviceId 连接。</p>
+<p>3 查找蓝牙外围设备的服务</p>
+<p>4 读写指定服务的特性值</p>
+<p>运行Demo并连接小米手环2代得到的结果如下：</p>
+<p>Services num:6<br>扫描到Service：00001800-0000-1000-8000-00805f9b34fb<br>characteristic: 00002a00-0000-1000-8000-00805f9b34fb<br>characteristic: 00002a01-0000-1000-8000-00805f9b34fb<br>characteristic: 00002a02-0000-1000-8000-00805f9b34fb<br>characteristic: 00002a04-0000-1000-8000-00805f9b34fb<br>扫描到Service：00001801-0000-1000-8000-00805f9b34fb<br>characteristic: 00002a05-0000-1000-8000-00805f9b34fb<br>扫描到Service：0000fee0-0000-1000-8000-00805f9b34fb<br>characteristic: 0000ff01-0000-1000-8000-00805f9b34fb<br>characteristic: 0000ff02-0000-1000-8000-00805f9b34fb<br>characteristic: 0000ff03-0000-1000-8000-00805f9b34fb<br>characteristic: 0000ff04-0000-1000-8000-00805f9b34fb<br>characteristic: 0000ff05-0000-1000-8000-00805f9b34fb<br>characteristic: 0000ff06-0000-1000-8000-00805f9b34fb<br>characteristic: 0000ff07-0000-1000-8000-00805f9b34fb<br>characteristic: 0000ff08-0000-1000-8000-00805f9b34fb<br>characteristic: 0000ff09-0000-1000-8000-00805f9b34fb<br>characteristic: 0000ff0a-0000-1000-8000-00805f9b34fb<br>characteristic: 0000ff0b-0000-1000-8000-00805f9b34fb<br>characteristic: 0000ff0c-0000-1000-8000-00805f9b34fb<br>characteristic: 0000ff0d-0000-1000-8000-00805f9b34fb<br>characteristic: 0000ff0e-0000-1000-8000-00805f9b34fb<br>characteristic: 0000ff0f-0000-1000-8000-00805f9b34fb<br>characteristic: 0000ff10-0000-1000-8000-00805f9b34fb<br>扫描到Service：0000fee1-0000-1000-8000-00805f9b34fb<br>characteristic: 0000fedd-0000-1000-8000-00805f9b34fb<br>characteristic: 0000fede-0000-1000-8000-00805f9b34fb<br>characteristic: 0000fedf-0000-1000-8000-00805f9b34fb<br>characteristic: 0000fed0-0000-1000-8000-00805f9b34fb<br>characteristic: 0000fed1-0000-1000-8000-00805f9b34fb<br>characteristic: 0000fed2-0000-1000-8000-00805f9b34fb<br>characteristic: 0000fed3-0000-1000-8000-00805f9b34fb<br>扫描到Service：0000fee7-0000-1000-8000-00805f9b34fb<br>characteristic: 0000fec7-0000-1000-8000-00805f9b34fb<br>characteristic: 0000fec8-0000-1000-8000-00805f9b34fb<br>characteristic: 0000fec9-0000-1000-8000-00805f9b34fb<br>扫描到Service：00001802-0000-1000-8000-00805f9b34fb<br>characteristic: 00002a06-0000-1000-8000-00805f9b34fb<br>我们可以看到总共得到了6个Service,分别是：</p>
+<p>1800 Generic Access<br>1801 Generic Attribute<br>fee0 安徽华米公司购买<br>fee1 安徽华米公司购买<br>fee7 腾讯公司购买<br>1802 Immediate Alert<br>下一篇文章我们将对小米手环进行读取和操作。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/qrcode.jpg" alt="lumang wechat" style="width: 200px; max-width: 100%;"/>
+    <div>扫码关注博主公众号</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="lumang 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="lumang 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    lumang
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2018/05/27/wechat-ble-1/" title="wechat ble 1">http://yoursite.com/2018/05/27/wechat-ble-1/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/27/docker/" rel="next" title="docker">
+                <i class="fa fa-chevron-left"></i> docker
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/28/明辨是非/" rel="prev" title="明辨是非">
+                明辨是非 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.png"
+                alt="lumang" />
+            
+              <p class="site-author-name" itemprop="name">lumang</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">36</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/lumang" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:luguannan0107@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#基本概念"><span class="nav-number">1.</span> <span class="nav-text">基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#设备角色"><span class="nav-number">1.1.</span> <span class="nav-text">设备角色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GATT"><span class="nav-number">1.2.</span> <span class="nav-text">GATT</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GATT结构图"><span class="nav-number">1.3.</span> <span class="nav-text">GATT结构图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GATT-C-S"><span class="nav-number">1.4.</span> <span class="nav-text">GATT C/S</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Service-Characteristic"><span class="nav-number">1.5.</span> <span class="nav-text">Service/Characteristic</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lumang</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">13.6k</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共13.6k字</span>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
