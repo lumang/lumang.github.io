@@ -1,2158 +1,946 @@
 <!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html>
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
+    <meta charset="utf-8" />
 
+    
 
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-
-
-<meta property="og:type" content="website">
+    
+    <title>lumang</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta property="og:type" content="website">
 <meta property="og:title" content="lumang">
 <meta property="og:url" content="http://yoursite.com/page/3/index.html">
 <meta property="og:site_name" content="lumang">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="lumang">
+    
 
+    
+        <link rel="alternate" href="/" title="lumang" type="application/atom+xml" />
+    
 
+    
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Pisces',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
 
+    <link rel="stylesheet" href="/css/style.css">
 
-
-  <link rel="canonical" href="http://yoursite.com/page/3/"/>
-
-
-
-
-
-  <title>lumang</title>
-  
-
-
-
-
-
-  <script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?ad2b2688c5e01f694d34f39199738b43";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-
-
+    <script src="/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
 
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">每天都要保持微笑:)</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Inici</a>
+                                </li>
+                            
+                                        
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">Quant a</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
 
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband">
-	<a href="https://github.com/lumang"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
-	</div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">lumang</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Cercar" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
     </div>
-      
-        <p class="site-subtitle">每天都要保持微笑:)</p>
-      
-  </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
 </div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
-</nav>
-
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/17/rtthread-day1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lumang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lumang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/17/rtthread-day1/" itemprop="url">rtthread day1</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-17T18:31:00+08:00">
-                2018-05-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  237
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>rtthread<br>今天开始学习jiezhi的15天RT-Thread的课程<br>感谢RT-Thread体耿的免费课程，可以系统入门RT-Thread </p>
-<h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><p>MDK 环境搭建,<br>公众号回复”MDK”获取安装软件<br>具体的安装说明，见附件里面的安装说明<br>图片</p>
-<h1 id="认识RT-Thread"><a href="#认识RT-Thread" class="headerlink" title="认识RT-Thread"></a>认识RT-Thread</h1><p>RT-Thread是操作系统，是真正的国产操作系统，本次的源码是RT-Thread的提供GitHub的源码<br>有需要的同学可以到RT-Thread GitHub上下载<br>这里提供下下载地址<br><a href="https://github.com/lumang/rt-thread" target="_blank" rel="noopener">https://github.com/lumang/rt-thread</a><br>值得一提RT-Thread的源码非常方便配置裁剪，通过rtconfig文件可以配置自己的系统</p>
-<h1 id="系统启动代码"><a href="#系统启动代码" class="headerlink" title="系统启动代码"></a>系统启动代码</h1><p>这是本节课的重点内容，jiezhi 老师分析了RT-Thread的两个main函数<br>一个main函数是面向用户的应用编写，一个main函数是面向系统层面的</p>
-<h1 id="用户入口代码"><a href="#用户入口代码" class="headerlink" title="用户入口代码"></a>用户入口代码</h1><p>入户的入口</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/15/专业精神/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lumang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lumang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/15/专业精神/" itemprop="url">专业精神</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-15T19:15:18+08:00">
-                2018-05-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  242
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>专业精神<br>作为职场人士，一定要有专业精神。<br>今天的事情是这样的组里的前端小组leader 将要被fire，原因是没有积极的推动和完成任务<br>从心里来说，我们部门领导都是很好的人，愿意花时间来让大家成长，也积极的给大家提供成长的空间。<br>从年初开始CTO就积极的给大家提供一些设计，架构方面的实战练习，有的人在不断的修改和指导中得到的能力的提升。<br>有的人害怕麻烦，不想用力，结果还是老样子，没有提升不说，还给组内带来了不好的氛围，特别是作为一个技术的lead，本来用该做出表率，为领导们管理部门一部分，协调领导工作</p>
-<p>另外的问题是作为小团队，很多事情需要每个人的积极主动</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/15/opencv-01/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lumang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lumang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/15/opencv-01/" itemprop="url">opencv 01</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-15T16:43:28+08:00">
-                2018-05-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  923
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  3
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>先熟悉解决问题的步骤，然后细化学习每个步骤中的具体算法细节优化才是学习之道</strong><br><img src="../images/cv.png" alt="Alt text"></p>
-<h1 id="计算机视觉系统概述"><a href="#计算机视觉系统概述" class="headerlink" title="计算机视觉系统概述"></a>计算机视觉系统概述</h1><p>计算机视觉系统是最近比较热门的研究领域，今天开始给大家介绍下计算机视觉相关的知识。<br>视觉是人的所有感官中最敏感的一种，人的视觉可以感知环境，而机器的视觉却很难感知环境<br>为了解决计算机视觉问题，要确定解决问题的方法，<br>而解决任何问题都有一个通用方法：通过理解每一步的目的来把问题分解成简单和可实现的自步骤</p>
-<p>下面通过对计算机视觉系统进行模块划分，来了解解决计算机视觉问题的方法</p>
-<h1 id="计算机视觉系统的组成模块划分"><a href="#计算机视觉系统的组成模块划分" class="headerlink" title="计算机视觉系统的组成模块划分"></a>计算机视觉系统的组成模块划分</h1><p><img src="../images/opencv.png" alt="Alt text"></p>
-<h2 id="数据采集，获取环境信息"><a href="#数据采集，获取环境信息" class="headerlink" title="数据采集，获取环境信息"></a>数据采集，获取环境信息</h2><p>通过相机和arduino系统<br>通常我们用数码相机，当然现在市面上有很多类型相机都可以<br>比如手机相机，AR相机，VR相机等等<br>arduino 可以获取其他感官数据，比如声音，压力，距离等</p>
-<h2 id="预处理"><a href="#预处理" class="headerlink" title="预处理"></a>预处理</h2><pre><code>把准备好的动心进行处理
-原始数据有很多噪音
-任何情况下，最好过滤下图片
-图片数据RGB red green blue ，每个颜色一个字节的数据 
-目的为了从数据中获取真实的数据信息
-</code></pre><h2 id="特征提取"><a href="#特征提取" class="headerlink" title="特征提取"></a>特征提取</h2><pre><code>计算机视觉优势就是对场景的自动化解释
-提取大数据集的小数据
-</code></pre><h2 id="后处理和后置滤波"><a href="#后处理和后置滤波" class="headerlink" title="后处理和后置滤波"></a>后处理和后置滤波</h2><pre><code>特征提取后，需要高层次滤波，滤波有各种方式，根据项目需求来选择
-</code></pre><h2 id="识别检测"><a href="#识别检测" class="headerlink" title="识别检测"></a>识别检测</h2><pre><code>计算机视觉系统通过解释图像和图像序列来得到结论
-检测是一识别的一种基本形式
-识别是一个更复杂的术语，也叫分类
-识别过程中将物体分成预先分好的几类，或者通过学习分类，这部分设计深度学习的问题
-牢记识别和分类的目的
-</code></pre><h2 id="触发动作"><a href="#触发动作" class="headerlink" title="触发动作"></a>触发动作</h2><pre><code>计算机视觉系统是个决策系统处理过程，下一步就是执行动作了
-</code></pre><h2 id="连接子模块"><a href="#连接子模块" class="headerlink" title="连接子模块"></a>连接子模块</h2><pre><code>解决任何视觉问题的时候，首先要对问题有个全局的考虑，然后把问题分解成一些系列有意义，内部独立的子模块。算法策略上--分而治之
-</code></pre><h1 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h1><p><strong>实例手势控制</strong><br>Arduino系统和OpenCV系统组合<br>计算机视觉系统将摄像头获取的数据处理后，将处理指令发送给Arduino，Arduino来操作外部设备<br><img src="../images/opencvarduino.png" alt="Alt text"></p>
-<p>通过摄像头获取人脸，识别出员工面部特征，特征符合就发送开门命令给arduino，arduino 命令给电磁门禁，达到开门的目的</p>
-<p>前台打卡处相机，按门铃出发运动监测系统<br>客人按下门铃，展示正确的手势，视觉控制器自动打开门，手势错误，则门不会打开</p>
-<pre><code>第一步 数据采集 摄像头步骤手势动作图片
-第二步 将图片转换为二进制格式，然后把图像中比较小的物体都过滤掉 。手势图片过滤完成
-第三步 我们执行特征提取来找到图像中的可能位置，得到一个带手势候选的图片如图
-</code></pre><p><img src="../images/hand.png" alt="Alt text"></p>
-<pre><code>第四步 需要一个手势检测器，可以对手势分类
-如果手势正确发命令给Arduino开门，反之没有动作。
-</code></pre>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/14/如何赚钱/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lumang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lumang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/14/如何赚钱/" itemprop="url">如何赚钱</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-14T21:57:45+08:00">
-                2018-05-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  18
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="如何赚钱"><a href="#如何赚钱" class="headerlink" title="如何赚钱"></a>如何赚钱</h1><p>最近有两个新闻让人震惊，一个xi</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/13/raspberry-login/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lumang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lumang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/13/raspberry-login/" itemprop="url">raspberry login</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-13T22:31:57+08:00">
-                2018-05-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  527
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  2
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>现在树莓派作为微型卡片电脑，越来越多的应用到各种产品和创意设计中，树莓派在实际使用通常是无显示器，通过ssh远程操作那么问题来了<br>在没有显示器的情况下如何获取raspberry树莓派的IP地址呢？<br>一般的话有三种解决方法</p>
-<h1 id="1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址"><a href="#1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址" class="headerlink" title="1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址"></a>1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址</h1><p>这种方法比较简单，一目了然，但是对于没有路由器管理员权限的情况下比较难实现，特别是在校的学生和在外租房子的同学们</p>
-<h1 id="2、通过arp-a-命令"><a href="#2、通过arp-a-命令" class="headerlink" title="2、通过arp -a 命令"></a>2、通过arp -a 命令</h1><p>window环境下将树莓派和计算机网口通过网线连接，且在计算机网口设置固定IP地址<br>这样通过cmd 窗口输入 arp -a 命令后可以查看到树莓派的IP地址，这个比上面路由器的方案相比就比较简单了，但是还有有问题，因为arp 缓存问题，有的时候根本无法查到树莓派IP地址，这就引出了第三种方式了。通过网络调试神奇wireshark软件</p>
-<h1 id="3、通过Wireshark软件来获取树莓派的IP地址"><a href="#3、通过Wireshark软件来获取树莓派的IP地址" class="headerlink" title="3、通过Wireshark软件来获取树莓派的IP地址"></a>3、通过Wireshark软件来获取树莓派的IP地址</h1><p>这里不需要了解太多Wireshark的原理,只需要了解简单网络基本常识即可，具体来看我解决问题的步骤</p>
-<ul>
-<li>首先跟第二种方法中的类似将树莓派和计算机连接并把计算机网卡设置为固定IP地址<br><img src="../images/3-1.png" alt="Alt text"></li>
-<li>然后打开wireshark软件选择捕获接口为本地链接，软件开始捕获计算机网口和外界的通信数据了<br><img src="../images/get-port.png" alt="Alt text"></li>
-<li>将树莓派通电，通电以后树莓派上就会显示一系列通信数据，大概1-2分钟后查看是否有Raspber开头的MAC地址如图，可以看到send MAC address 和 send IP address<br><img src="../images/raspberry.png" alt="Alt text"></li>
-<li>将计算机的IP地址改为和raspberry 相同网段的地址就可以登录到raspberry了<br><img src="../images/login.png" alt="Alt text"></li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/13/opencv-arduino-project/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lumang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lumang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/13/opencv-arduino-project/" itemprop="url">opencv arduino project</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-13T10:13:21+08:00">
-                2018-05-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  2
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="opencv-arduino"><a href="#opencv-arduino" class="headerlink" title="opencv arduino"></a>opencv arduino</h1>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/10/思考1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lumang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lumang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/10/思考1/" itemprop="url">思考1</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-10T22:20:02+08:00">
-                2018-05-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  294
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h1><p>古语有云，学而不思则罔，思而不学则殆<br>python 课程 </p>
-<p>坚持，python 熟练掌握，基本语法，数据结构，设计模式</p>
-<p>时间分为4周，全部自学，仅提供大纲。适用于Web方向：<br>1、Week1：读完《简明Python教程》，适应Python开发环境，基础要打好，多练习<br>2、Week2：写个爬虫，需要深入了解re、urllib2、sqlite3、threading，Queue等几个模块。需要用上多线程抓取，正则表达式分析，并发资源控制，重新开启程序自动继续抓取和分析<br>3、Week3：学习一种Web开发框架，推荐Flask、webpy之类的，学个数据库接口如sqlite3，写个简单的web应用如博客<br>4、Week4：给产品做个小功能并走完测试和上线流程，各个时期是不同的我在之前的几家公司招聘工程师时，学过Python的其实较少。更常见的情况是人聪明，招来再学Python。就是按照如上流程。这个流程安排的挺轻松的，我找到的所有人都成功完成了这个流程。并且之后工作也很顺利。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/06/hexo-next-主题配置/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lumang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lumang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/06/hexo-next-主题配置/" itemprop="url">hexo next 主题配置</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-06T16:41:10+08:00">
-                2018-05-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  17
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>参考<br>This is <a href="https://segmentfault.com/a/1190000009544924" title=" segmentfault" target="_blank" rel="noopener">link</a> inline link.</p>
-<p><a href="https://segmentfault.com/a/1190000009544924" target="_blank" rel="noopener">This link</a> has no title attribute.<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/05/06/hexo-next-主题配置/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/05/“money”/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lumang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lumang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/05/“money”/" itemprop="url">“money”</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-05T01:29:45+08:00">
-                2018-05-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  345
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>中国人说:钱不是万能的，没有钱是万万不行的。<br>今天和老婆去吃新石器烤肉，点的是双人餐，吃的比较开心，中间聊了很多关于小时候的事情，总结起来就是，小的时候没有好好吃，物质生活不太丰富。<br>老婆的家庭确实不太好，但是作为家庭成员之间，没有相互关爱也是一方面的原因。<br>想想今天这样的生活，虽然没有大富大贵，至少不会忍饥挨饿了，努力会有回报，不想小时候那么无力了。<br>一个人的价值如何体现，一定体现在他是被人需要的。<br>现在我的这个位置就比较尴尬了，以前搞客户端，没有仔细研究web开发，对于java web 开发只等其中的皮毛而已。<br>所以就要专精一点并努力向前，目前来看web 将成为主流，数据分析，产品经理是个很好的目标，但是短期来看形成产品经理的能力还是很欠缺的，而目前我们还是急需要<br>提升薪资来应对今年买房的目标。C++ 总的来说还不是特别的熟练，需要赶紧熟练起来<br>权衡一下，日常总结，音视频相关方面知识巩固</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/04/debug/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lumang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lumang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/04/debug/" itemprop="url">debug</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-04T10:44:39+08:00">
-                2018-05-04
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  935
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  3
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="调试九法"><a href="#调试九法" class="headerlink" title="调试九法"></a>调试九法</h1><h4 id="本文阅读时间3分钟"><a href="#本文阅读时间3分钟" class="headerlink" title="本文阅读时间3分钟"></a>本文阅读时间3分钟</h4><p>每个开发者都必须会的一项技术，-debug，最近读了一本关于调试的书分享给大家，书的内容不到200页，一口气读下来，估计需要一个小时，速度内容简单明了，主要是作者20多年的工作中调试经验的总结,作者作为一名软件开发人员的工作调试经验，同样适用其他领域开发人员，同时，解决问题的思路也适用于不同岗位的人思考借鉴，人人必备的调试技巧。全书分为三个主要部分：九种调试规则介绍，一个综合运用实例，总结陈词。</p>
-<p>书中作者总结工作中两件重要的事情：</p>
-<ul>
-<li>如果查找bug花费了大量时间，那么原因可能是忽略了某个基本的，最重要的规则，一旦应用了那条规则，就会很快找到问题</li>
-<li>善于快速调试的人已经深刻理解并应用了这些规则，而那些很难理解或使用这些规则的人则很难找到bug</li>
-</ul>
-<p>对于调试技巧作者的观点是：</p>
-<ul>
-<li>关键是 记住并应用这些规则，调试艺术是门科学</li>
-<li>调试不仅仅是故障检修</li>
-<li>调试，查明为什么一个设计没有按计划工作</li>
-</ul>
-<p>作者通过自己多年的实际工作经验，总结出开发测试工作debug的经验<br>这本书值得推荐给任何人来读， <strong>如何快速找到工作中的错误</strong><br>这里分享下读书笔记，思维导图，关注knowiot公众号，后台回复’debug’获取pdf文件和思维导图笔记</p>
-<h2 id="理解系统"><a href="#理解系统" class="headerlink" title="理解系统"></a>理解系统</h2><p>这是最重要的一个方法</p>
-<ul>
-<li>当所有方法都不管用的时候，读读编程手册</li>
-<li>知道系统的原理以及如何设计，最重要的是为什么这么设计，如果你们有理解系统的某个部分，那么这部分将会出问题-墨菲定律</li>
-<li>理解系统不等于理解问题，当时解决问题的前提是理解系统<h2 id="制造失败"><a href="#制造失败" class="headerlink" title="制造失败"></a>制造失败</h2></li>
-<li>通过还原观察错误，查找线索，确认是否修复</li>
-<li>从头开始</li>
-<li>引发失败</li>
-<li>不要模拟失败</li>
-<li>查找不受你控制条件</li>
-<li>记录每一件事情，并找到间歇性bug的特征</li>
-<li>不要过于相信统计数据</li>
-<li>要认识到那是可能发生的</li>
-<li>永远不要丢掉一个调试工具   <h2 id="不要想，而要看"><a href="#不要想，而要看" class="headerlink" title="不要想，而要看"></a>不要想，而要看</h2></li>
-<li>凭空想象，问题可能有几千条原因，而实际的原因只有去看了才能发现<h2 id="分而治之"><a href="#分而治之" class="headerlink" title="分而治之"></a>分而治之</h2></li>
-<li>问题分解，逐次逼近，问题会水落石出<h2 id="一次只改一个地方"><a href="#一次只改一个地方" class="headerlink" title="一次只改一个地方"></a>一次只改一个地方</h2></li>
-<li>如果更改没有起到预期的作用，那就改回来好了<h2 id="保持审计跟踪"><a href="#保持审计跟踪" class="headerlink" title="保持审计跟踪"></a>保持审计跟踪</h2></li>
-<li>将操作步骤，顺序，结果全部记录下来</li>
-<li>任何细节都是可能是重要的</li>
-<li>把事情记录下来<h2 id="检查插头"><a href="#检查插头" class="headerlink" title="检查插头"></a>检查插头</h2></li>
-<li>避免显而易见的错误，假设错误是最容易修复的错误<h2 id="获得全新的观点"><a href="#获得全新的观点" class="headerlink" title="获得全新的观点"></a>获得全新的观点</h2></li>
-<li>休息一下，喝杯咖啡，和同事聊聊天</li>
-<li>征求别人的意见</li>
-<li>获取专业的知识</li>
-<li>听取别人的境遇</li>
-<li>帮助无处不在</li>
-<li>放下面子<h2 id="如果你不修复bug，它依然存在"><a href="#如果你不修复bug，它依然存在" class="headerlink" title="如果你不修复bug，它依然存在"></a>如果你不修复bug，它依然存在</h2></li>
-<li>查证问题确实已被修复</li>
-<li>bug 从来不会自己消失，如果你不修复他，它还会在那。</li>
-<li>从根本上解决问题</li>
-<li>对过程进行修复</li>
-</ul>
-<p><strong>关注公众号，后台回复’debug’获取《调试九法》pdf文件和思维导图笔记 :)</strong></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image"
-                src="/images/avatar.png"
-                alt="lumang" />
-            
-              <p class="site-author-name" itemprop="name">lumang</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">41</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">标签</span>
-                
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-            <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/lumang" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="mailto:luguannan0107@gmail.com" target="_blank" title="E-Mail">
-                      
-                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                  </span>
-                
-            </div>
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">lumang</span>
-
-  
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-area-chart"></i>
-    </span>
-    
-      <span class="post-meta-item-text">Site words total count&#58;</span>
-    
-    <span title="Site words total count">15.8k</span>
-  
-</div>
-
-
-
-
-
-
-
-
-
-<div class="powered-by">
-<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
-  本站访客数:<span id="busuanzi_value_site_uv"></span>
-</span>
-</div>
-
-<div class="theme-info">
-  <div class="powered-by"></div>
-  <span class="post-count">博客全站共15.8k字</span>
-</div>
-
-        
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'categories',
+            TAGS: 'etiquetes',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
 </script>
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-  
-
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <em class="page-title-link" data-url="home">Inici</em>
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            
+
+    
+    
+        
+        
+        <section class="archives-wrap">
+            <div class="archive-year-wrap">
+                <a href="/archives/2018" class="archive-year"><i class="icon fa fa-calendar-o"></i>2018</a>
+            </div>
+            <div class="archives">
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2018/05/23/raspberryPi-IoT-01/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2018/05/23/raspberryPi-IoT-01/">0</span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            
+            </div>
+            <div class="date"><time datetime="2018-05-23T11:14:12.000Z" itemprop="datePublished">2018-05-23</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2018/05/23/raspberryPi-IoT-01/">raspberryPi IoT 01</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            在树莓派构建自己iot应用，是学习iot技术的一种途径本文通过一步步说明来指导树莓派初学者，学习如何让你的IoT应用运行起来
+项目说明通过树莓派记录温度数据，当温度达到某个设定值，然后推送通知消息到Android设备或者微信中，所有的工程文件下载请联系作者lumang(lumang0107)获取
+这里我们将要学到的内容
+设置树莓派
+使用温度传感器，DS18B20
+使用PIR 传感器
+使用温度传感器
+        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2018/05/21/front-e-dev/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2018/05/21/front-e-dev/">0</span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            
+            </div>
+            <div class="date"><time datetime="2018-05-20T16:20:14.000Z" itemprop="datePublished">2018-05-21</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2018/05/21/front-e-dev/">front-e dev</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            
+        </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+    
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2018/05/20/life-style/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2018/05/20/life-style/">0</span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            
+            </div>
+            <div class="date"><time datetime="2018-05-20T14:55:35.000Z" itemprop="datePublished">2018-05-20</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2018/05/20/life-style/">life style</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            周末加班太晚了，没有整理技术的类文章，姑且说说最近的感悟吧关于毕业择业的问题：我认为应该先选择自己职业在选择就业记得临近大学毕业的时候学校的就业老师说，我们可以先就业再择业，意思就是先把工作落实，在选择自己的职业首先这样逻辑地有问题，而且问题学校和学生都有一方面学校为了就业率，让学生先就业再择业，先把就业率提高，自己的任务先完成，不考虑学生的实际需要另一方面学生自己的问题，没有长远的规划，入学之初
+        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2018/05/19/wechat-miniapp/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2018/05/19/wechat-miniapp/">0</span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            
+            </div>
+            <div class="date"><time datetime="2018-05-19T15:17:46.000Z" itemprop="datePublished">2018-05-19</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2018/05/19/wechat-miniapp/">wechat miniapp</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            微信小程序的思想是用完就走，不需要安装App，不占太多用手机空间，特别方便调试工具的安装和使用。计划开发一个调试助手小程序，主要涉及蓝牙调试和网络协议调试，主要的开发方式就是参考微信开发接口，和相关的API今天介绍下如何入门小程序
+注册一个小程序的账号进入https://mp.weixin.qq.com进行小程序注册
+安装开发者工具第一小程序
+        </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+    
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2018/05/18/rtthread-day2/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2018/05/18/rtthread-day2/">0</span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            
+            </div>
+            <div class="date"><time datetime="2018-05-18T13:50:59.000Z" itemprop="datePublished">2018-05-18</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2018/05/18/rtthread-day2/">rtthread day2 </a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            15天RT-Thread 入门之第二天今天的主要内容是Led 跑马灯的讲解主要的内容是led跑马灯源码讲解定时滴答时钟线程状态
+Led跑马灯每个学习嵌入式开发的同学的第一板子上的程序应该就是跑马灯了首先初始化led接口，然后在已大循环中，将led进行定时开关操作通过这个例子可以，了解RT-Thread,线程的创建方式线程创建语法123456789rt_thread_t tid1,tid2;tid1
+        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2018/05/17/rtthread-day1/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2018/05/17/rtthread-day1/">0</span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            
+            </div>
+            <div class="date"><time datetime="2018-05-17T10:31:00.000Z" itemprop="datePublished">2018-05-17</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2018/05/17/rtthread-day1/">rtthread day1</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            rtthread今天开始学习jiezhi的15天RT-Thread的课程感谢RT-Thread体耿的免费课程，可以系统入门RT-Thread 
+环境搭建MDK 环境搭建,公众号回复”MDK”获取安装软件具体的安装说明，见附件里面的安装说明图片
+认识RT-ThreadRT-Thread是操作系统，是真正的国产操作系统，本次的源码是RT-Thread的提供GitHub的源码有需要的同学可以到RT-Th
+        </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+    
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2018/05/15/专业精神/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2018/05/15/专业精神/">0</span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            
+            </div>
+            <div class="date"><time datetime="2018-05-15T11:15:18.000Z" itemprop="datePublished">2018-05-15</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2018/05/15/专业精神/">专业精神</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            专业精神作为职场人士，一定要有专业精神。今天的事情是这样的组里的前端小组leader 将要被fire，原因是没有积极的推动和完成任务从心里来说，我们部门领导都是很好的人，愿意花时间来让大家成长，也积极的给大家提供成长的空间。从年初开始CTO就积极的给大家提供一些设计，架构方面的实战练习，有的人在不断的修改和指导中得到的能力的提升。有的人害怕麻烦，不想用力，结果还是老样子，没有提升不说，还给组内带来
+        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2018/05/15/opencv-01/" class="thumbnail">
+    
+    
+        <span style="background-image:url(../images/cv.png)" alt="opencv 01" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2018/05/15/opencv-01/">0</span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            
+            </div>
+            <div class="date"><time datetime="2018-05-15T08:43:28.000Z" itemprop="datePublished">2018-05-15</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2018/05/15/opencv-01/">opencv 01</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            先熟悉解决问题的步骤，然后细化学习每个步骤中的具体算法细节优化才是学习之道
+计算机视觉系统概述计算机视觉系统是最近比较热门的研究领域，今天开始给大家介绍下计算机视觉相关的知识。视觉是人的所有感官中最敏感的一种，人的视觉可以感知环境，而机器的视觉却很难感知环境为了解决计算机视觉问题，要确定解决问题的方法，而解决任何问题都有一个通用方法：通过理解每一步的目的来把问题分解成简单和可实现的自步骤
+下面通过
+        </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+    
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2018/05/14/如何赚钱/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2018/05/14/如何赚钱/">0</span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            
+            </div>
+            <div class="date"><time datetime="2018-05-14T13:57:45.000Z" itemprop="datePublished">2018-05-14</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2018/05/14/如何赚钱/">如何赚钱</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            如何赚钱最近有两个新闻让人震惊，一个xi
+
+        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2018/05/13/raspberry-login/" class="thumbnail">
+    
+    
+        <span style="background-image:url(../images/3-1.png)" alt="raspberry login" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2018/05/13/raspberry-login/">0</span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            
+            </div>
+            <div class="date"><time datetime="2018-05-13T14:31:57.000Z" itemprop="datePublished">2018-05-13</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2018/05/13/raspberry-login/">raspberry login</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            现在树莓派作为微型卡片电脑，越来越多的应用到各种产品和创意设计中，树莓派在实际使用通常是无显示器，通过ssh远程操作那么问题来了在没有显示器的情况下如何获取raspberry树莓派的IP地址呢？一般的话有三种解决方法
+1、将树莓派和路由器用网线连好以后，到路由器页面上去查看树莓派的IP地址这种方法比较简单，一目了然，但是对于没有路由器管理员权限的情况下比较难实现，特别是在校的学生和在外租房子的同学
+        </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+
+    </div></section>
+
+
+    <nav id="page-nav">
+        <span class="pages">Pàgina 3 de 5</span>
+        <a class="extend prev" rel="prev" href="/page/2/">&laquo;</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/4/">&raquo;</a>
+    </nav>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>seguir:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/03/11/core-ablity/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2019/03/11/core-ablity/" class="title">core ablity</a></p>
+                            <p class="item-date"><time datetime="2019-03-11T14:50:23.000Z" itemprop="datePublished">2019-03-11</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/12/29/2018-summery/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/12/29/2018-summery/" class="title"></a></p>
+                            <p class="item-date"><time datetime="2018-12-29T04:10:50.848Z" itemprop="datePublished">2018-12-29</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/12/08/last-month/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/12/08/last-month/" class="title">last month</a></p>
+                            <p class="item-date"><time datetime="2018-12-08T05:04:17.000Z" itemprop="datePublished">2018-12-08</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/10/15/jmeter/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/10/15/jmeter/" class="title">jmeter</a></p>
+                            <p class="item-date"><time datetime="2018-10-15T06:05:38.000Z" itemprop="datePublished">2018-10-15</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/10/14/Uipath-RPA/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/10/14/Uipath-RPA/" class="title">Uipath RPA</a></p>
+                            <p class="item-date"><time datetime="2018-10-14T04:13:20.000Z" itemprop="datePublished">2018-10-14</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">arxius</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">25</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">6</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">etiquetes</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/books/">books</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/感想/">感想</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/提升认知/">提升认知</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">etiqueta cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/books/" style="font-size: 10px;">books</a> <a href="/tags/感想/" style="font-size: 10px;">感想</a> <a href="/tags/提升认知/" style="font-size: 10px;">提升认知</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2019 lumang</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
 </body>
 </html>

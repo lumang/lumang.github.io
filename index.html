@@ -1,2162 +1,971 @@
 <!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html>
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
+    <meta charset="utf-8" />
 
+    
 
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-
-
-<meta property="og:type" content="website">
+    
+    <title>lumang</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta property="og:type" content="website">
 <meta property="og:title" content="lumang">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="lumang">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="lumang">
+    
 
+    
+        <link rel="alternate" href="/" title="lumang" type="application/atom+xml" />
+    
 
+    
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Pisces',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
 
+    <link rel="stylesheet" href="/css/style.css">
 
-
-  <link rel="canonical" href="http://yoursite.com/"/>
-
-
-
-
-
-  <title>lumang</title>
-  
-
-
-
-
-
-  <script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?ad2b2688c5e01f694d34f39199738b43";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-
-
+    <script src="/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
 
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">每天都要保持微笑:)</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Inici</a>
+                                </li>
+                            
+                                        
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">Quant a</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
 
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband">
-	<a href="https://github.com/lumang"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
-	</div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">lumang</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Cercar" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
     </div>
-      
-        <p class="site-subtitle">每天都要保持微笑:)</p>
-      
-  </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
 </div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
-</nav>
-
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/11/最好的工作状态/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lumang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lumang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/10/11/最好的工作状态/" itemprop="url">最好的工作状态</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-11T11:28:52+08:00">
-                2018-10-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  0
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/29/ffmpeg-editor/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lumang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lumang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/29/ffmpeg-editor/" itemprop="url">ffmpeg editor</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-29T17:46:14+08:00">
-                2018-08-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  366
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  2
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="1-导言"><a href="#1-导言" class="headerlink" title="1. 导言"></a>1. 导言</h1><p>ffmepg剪切视频，很方便，但是也有很大缺陷：<br>（1）剪切时间点不精确<br>（2）有时剪切的视频开头有黑屏</p>
-<p>造成这些问题的原因是ffmpeg无法seek到非关键帧上。<br>一下本文通过一些参数配置尽可能地减轻以上问题</p>
-<h1 id="2-基本剪切方法"><a href="#2-基本剪切方法" class="headerlink" title="2. 基本剪切方法"></a>2. 基本剪切方法</h1><blockquote>
-<p>ffmpeg -i test.mp4 -ss 10 -t 15 -codec copy cut.mp4<br>1<br>参数分析：</p>
-</blockquote>
-<blockquote>
-<p>-i : source<br>-ss:start time<br>-t :duration<br>-c :video,audio codec</p>
-</blockquote>
-<p>时间格式：</p>
-<p>x秒</p>
-<blockquote>
-<p>HOURS:MM:SS.MICROSECONDS<br>可以设置输出视频的编码格式</p>
-</blockquote>
-<blockquote>
-<p>-vcodec xxx<br>-acodec xxx</p>
-</blockquote>
-<p>把-ss, -t参数放在-i参数之后，是对输出文件执行的seek操作<br>输入文件会逐帧解码，直到-ss设置的时间点为止，这么操作会很慢，虽然时间点是准确的，但是很容易出现黑屏问题。</p>
-<h1 id="3-参数优化"><a href="#3-参数优化" class="headerlink" title="3. 参数优化"></a>3. 参数优化</h1><p>（1）将-ss， -t 参数放在-i参数之前</p>
-<blockquote>
-<p>ffmpeg -ss 10 -t 15 -i test.mp4 -codec copy cut.mp4</p>
-</blockquote>
-<p>对输入文件执行seek操作，会seek到-ss设置的时间点前面的关键帧上。<br>时间不精确，但是不会出现黑屏</p>
-<p>（2）accurate_seek<br>剪切时间更加精确</p>
-<blockquote>
-<p>ffmpeg -ss 10 -t 15 -accurate_seek -i test.mp4 -codec copy cut.mp4</p>
-</blockquote>
-<p>PS：accurate_seek必须放在-i参数之前</p>
-<p>（3）avoid_negative_ts<br>如果编码格式采用的copy 最好加上 -avoid_negative_ts 1参数</p>
-<blockquote>
-<p>ffmpeg -ss 10 -t 15 -accurate_seek -i test.mp4 -codec copy -avoid_negative_ts 1 cut.mp4</p>
-</blockquote>
-<h1 id="4-参考文献"><a href="#4-参考文献" class="headerlink" title="4. 参考文献"></a>4. 参考文献</h1><p>[1] <a href="http://trac.ffmpeg.org/wiki/Seeking" target="_blank" rel="noopener">http://trac.ffmpeg.org/wiki/Seeking</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/15/embedded-system-books/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lumang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lumang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/15/embedded-system-books/" itemprop="url">embedded system books</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-15T14:56:47+08:00">
-                2018-08-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  23
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>《手把手教你学单片机》<br>《stm32权威指南》<br>arm+linux<br>    arm<br>        arm 体系结构<br>    linux</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/10/cmake/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lumang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lumang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/10/cmake/" itemprop="url">cmake</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-10T13:40:26+08:00">
-                2018-07-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  1,602
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  9
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="一、-什么是CMake"><a href="#一、-什么是CMake" class="headerlink" title="一、 什么是CMake"></a>一、 什么是CMake</h1><p> CMake是一个比make更高级的编译配置工具，支持不同平台、不同的编译器，生成相应的Makefile或者vcproj项目（virtual studio 项目文件）。</p>
-<p> 通过编写CMakeLists.txt，可以控制生成的Makefile，从而控制编译过程。CMake自动生成的Makefile不仅可以通过make命令构建项目生成目标文件，还支持安装（make install）、测试安装的程序是否能正确执行（make test，或者ctest）、生成当前平台的安装包（make package）、生成源码包（make package_source）、产生Dashboard显示数据并上传等高级功能，只要在CMakeLists.txt中简单配置，就可以完成很多复杂的功能，包括写测试用例。如果有嵌套目录，子目录下可以有自己的CMakeLists.txt。</p>
-<h1 id="二、-CMake下载安装"><a href="#二、-CMake下载安装" class="headerlink" title="二、 CMake下载安装"></a>二、 CMake下载安装</h1><p>下载地址 <a href="https://cmake.org/download/" target="_blank" rel="noopener">https://cmake.org/download/</a></p>
-<p>window版直接点击“下一步”<br>安装完成效果<br><img src="./images/cmake.png" alt="avatar"></p>
-<h1 id="三-CMake基本使用和语法"><a href="#三-CMake基本使用和语法" class="headerlink" title="三 CMake基本使用和语法"></a>三 CMake基本使用和语法</h1><h2 id="1、-command"><a href="#1、-command" class="headerlink" title="1、 command"></a>1、 command</h2><blockquote>
-<p>command （args …）</p>
-</blockquote>
-<p>command 是命令名，大小写无关（注意：变量是大小写相关的）</p>
-<p>args 是参数，参数如果有空格，应该用双引号括起来</p>
-<p>变量引用用${VAR}语法</p>
-<blockquote>
-<p>set命令</p>
-</blockquote>
-<p>可以将多变量可以放在一起，合成为一个变量,如下所示<br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">set</span>（Foo a b c）</span><br><span class="line">command(<span class="variable">$&#123;Foo&#125;</span>)=command(a b c)&lt;br&gt;command(<span class="string">"$&#123;Foo&#125;"</span>)=command(<span class="string">"a b c"</span>)</span><br></pre></td></tr></table></figure></p>
-<p>CMake可以直接获取系统环境变量和Windows注册值。为了获取系统环境变量，需要语法<br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ENV&#123;VAR&#125;</span><br></pre></td></tr></table></figure></p>
-<h1 id="四、-Hello-World"><a href="#四、-Hello-World" class="headerlink" title="四、 Hello World"></a>四、 Hello World</h1><p>创建文件夹</p>
-<blockquote>
-<p>mkdir hello</p>
-</blockquote>
-<blockquote>
-<p>vi CmakeList.txt</p>
-</blockquote>
-<p>CMakeLists.txt文件中,最简单的版本，</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">project</span>(Hello)</span><br><span class="line"><span class="keyword">add_executable</span>(Hello Hello.c)</span><br></pre></td></tr></table></figure>
-<p>下面还有一个复杂一些的版本</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cmake_minimum_required</span> (<span class="number">2.6</span>)</span><br><span class="line"><span class="keyword">project</span> (HELLO)</span><br><span class="line"><span class="keyword">set</span> (HELLO_SRCS Hello.c File2.c File3.c)</span><br><span class="line"><span class="keyword">if</span> (win32)</span><br><span class="line">    <span class="keyword">set</span> (HELLO_SRCS <span class="variable">$&#123;HELLO_SRCS&#125;</span> WinSupport.c)</span><br><span class="line"><span class="keyword">else</span> ()</span><br><span class="line">    <span class="keyword">set</span> (HELLO_SRCS  <span class="variable">$&#123;HELLO_SRCS&#125;</span> UnixSupport.c)</span><br><span class="line"><span class="keyword">endif</span> ()</span><br><span class="line"> </span><br><span class="line"><span class="keyword">add_executable</span> (Hello <span class="variable">$&#123;HELLO_SRCS&#125;</span>)</span><br><span class="line"> </span><br><span class="line"><span class="comment">#look for Tcl library</span></span><br><span class="line"><span class="keyword">find_library</span> (TCL_LIBRARY NAMES tcl tcl84 tcl83 tcl82 tcl80 PATHS /usr/lib /usr/local/lib)</span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span> (TCL_LIBRARY)</span><br><span class="line">    target_link_library (HELLO <span class="variable">$&#123;TCL_LIBRARY&#125;</span>)</span><br><span class="line"><span class="keyword">endif</span> ()</span><br></pre></td></tr></table></figure>
-<h1 id="五、-Run-Cmake"><a href="#五、-Run-Cmake" class="headerlink" title="五、 Run Cmake"></a>五、 Run Cmake</h1><blockquote>
-<p>$ cd Hello</p>
-</blockquote>
-<blockquote>
-<p>$ cmake ..</p>
-</blockquote>
-<blockquote>
-<p>$ make </p>
-</blockquote>
-<p>六 CMake帮助文档</p>
-<blockquote>
-<p>cmake.exe –help</p>
-</blockquote>
-<p>我们可以查看cmake帮助，这个很全<br>显示cmake的指令</p>
-<blockquote>
-<p>cmake.exe –help-command-list<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br></pre></td><td class="code"><pre><span class="line">add_compile_options</span><br><span class="line">add_custom_command</span><br><span class="line">add_custom_target</span><br><span class="line">add_definitions</span><br><span class="line">add_dependencies</span><br><span class="line">add_executable</span><br><span class="line">add_library</span><br><span class="line">add_subdirectory</span><br><span class="line">add_test</span><br><span class="line">aux_source_directory</span><br><span class="line">break</span><br><span class="line">build_command</span><br><span class="line">build_name</span><br><span class="line">cmake_host_system_information</span><br><span class="line">cmake_minimum_required</span><br><span class="line">cmake_policy</span><br><span class="line">configure_file</span><br><span class="line">continue</span><br><span class="line">create_test_sourcelist</span><br><span class="line">ctest_build</span><br><span class="line">ctest_configure</span><br><span class="line">ctest_coverage</span><br><span class="line">ctest_empty_binary_directory</span><br><span class="line">ctest_memcheck</span><br><span class="line">ctest_read_custom_files</span><br><span class="line">ctest_run_script</span><br><span class="line">ctest_sleep</span><br><span class="line">ctest_start</span><br><span class="line">ctest_submit</span><br><span class="line">ctest_test</span><br><span class="line">ctest_update</span><br><span class="line">ctest_upload</span><br><span class="line">define_property</span><br><span class="line">else</span><br><span class="line">elseif</span><br><span class="line">enable_language</span><br><span class="line">enable_testing</span><br><span class="line">endforeach</span><br><span class="line">endfunction</span><br><span class="line">endif</span><br><span class="line">endmacro</span><br><span class="line">endwhile</span><br><span class="line">exec_program</span><br><span class="line">execute_process</span><br><span class="line">export</span><br><span class="line">export_library_dependencies</span><br><span class="line">file</span><br><span class="line">find_file</span><br><span class="line">find_library</span><br><span class="line">find_package</span><br><span class="line">find_path</span><br><span class="line">find_program</span><br><span class="line">fltk_wrap_ui</span><br><span class="line">foreach</span><br><span class="line">function</span><br><span class="line">get_cmake_property</span><br><span class="line">get_directory_property</span><br><span class="line">get_filename_component</span><br><span class="line">get_property</span><br><span class="line">get_source_file_property</span><br><span class="line">get_target_property</span><br><span class="line">get_test_property</span><br><span class="line">if</span><br><span class="line">include</span><br><span class="line">include_directories</span><br><span class="line">include_external_msproject</span><br><span class="line">include_regular_expression</span><br><span class="line">install</span><br><span class="line">install_files</span><br><span class="line">install_programs</span><br><span class="line">install_targets</span><br><span class="line">link_directories</span><br><span class="line">link_libraries</span><br><span class="line">list</span><br><span class="line">load_cache</span><br><span class="line">load_command</span><br><span class="line">macro</span><br><span class="line">make_directory</span><br><span class="line">mark_as_advanced</span><br><span class="line">math</span><br><span class="line">message</span><br><span class="line">option</span><br><span class="line">output_required_files</span><br><span class="line">project</span><br><span class="line">qt_wrap_cpp</span><br><span class="line">qt_wrap_ui</span><br><span class="line">remove</span><br><span class="line">remove_definitions</span><br><span class="line">return</span><br><span class="line">separate_arguments</span><br><span class="line">set</span><br><span class="line">set_directory_properties</span><br><span class="line">set_property</span><br><span class="line">set_source_files_properties</span><br><span class="line">set_target_properties</span><br><span class="line">set_tests_properties</span><br><span class="line">site_name</span><br><span class="line">source_group</span><br><span class="line">string</span><br><span class="line">subdir_depends</span><br><span class="line">subdirs</span><br><span class="line">target_compile_definitions</span><br><span class="line">target_compile_features</span><br><span class="line">target_compile_options</span><br><span class="line">target_include_directories</span><br><span class="line">target_link_libraries</span><br><span class="line">target_sources</span><br><span class="line">try_compile</span><br><span class="line">try_run</span><br><span class="line">unset</span><br><span class="line">use_mangled_mesa</span><br><span class="line">utility_source</span><br><span class="line">variable_requires</span><br><span class="line">variable_watch</span><br><span class="line">while</span><br><span class="line">write_file</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<p>cmake定义的变量</p>
-<blockquote>
-<p>cmake.exe –help-variable-list</p>
-</blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br></pre></td><td class="code"><pre><span class="line">&lt;PROJECT-NAME&gt;_BINARY_DIR</span><br><span class="line">&lt;PROJECT-NAME&gt;_SOURCE_DIR</span><br><span class="line">&lt;PROJECT-NAME&gt;_VERSION</span><br><span class="line">&lt;PROJECT-NAME&gt;_VERSION_MAJOR</span><br><span class="line">&lt;PROJECT-NAME&gt;_VERSION_MINOR</span><br><span class="line">&lt;PROJECT-NAME&gt;_VERSION_PATCH</span><br><span class="line">&lt;PROJECT-NAME&gt;_VERSION_TWEAK</span><br><span class="line">APPLE</span><br><span class="line">BORLAND</span><br><span class="line">BUILD_SHARED_LIBS</span><br><span class="line">CMAKE_&lt;CONFIG&gt;_POSTFIX</span><br><span class="line">CMAKE_&lt;LANG&gt;_ARCHIVE_APPEND</span><br><span class="line">CMAKE_&lt;LANG&gt;_ARCHIVE_CREATE</span><br><span class="line">CMAKE_&lt;LANG&gt;_ARCHIVE_FINISH</span><br><span class="line">CMAKE_&lt;LANG&gt;_COMPILER</span><br><span class="line">CMAKE_&lt;LANG&gt;_COMPILER_ABI</span><br><span class="line">CMAKE_&lt;LANG&gt;_COMPILER_EXTERNAL_TOOLCHAIN</span><br><span class="line">CMAKE_&lt;LANG&gt;_COMPILER_ID</span><br><span class="line">CMAKE_&lt;LANG&gt;_COMPILER_LOADED</span><br><span class="line">CMAKE_&lt;LANG&gt;_COMPILER_TARGET</span><br><span class="line">CMAKE_&lt;LANG&gt;_COMPILER_VERSION</span><br><span class="line">CMAKE_&lt;LANG&gt;_COMPILE_OBJECT</span><br><span class="line">CMAKE_&lt;LANG&gt;_CREATE_SHARED_LIBRARY</span><br><span class="line">CMAKE_&lt;LANG&gt;_CREATE_SHARED_MODULE</span><br><span class="line">CMAKE_&lt;LANG&gt;_CREATE_STATIC_LIBRARY</span><br><span class="line">CMAKE_&lt;LANG&gt;_FLAGS</span><br><span class="line">CMAKE_&lt;LANG&gt;_FLAGS_DEBUG</span><br><span class="line">CMAKE_&lt;LANG&gt;_FLAGS_MINSIZEREL</span><br><span class="line">CMAKE_&lt;LANG&gt;_FLAGS_RELEASE</span><br><span class="line">CMAKE_&lt;LANG&gt;_FLAGS_RELWITHDEBINFO</span><br><span class="line">CMAKE_&lt;LANG&gt;_IGNORE_EXTENSIONS</span><br><span class="line">CMAKE_&lt;LANG&gt;_IMPLICIT_INCLUDE_DIRECTORIES</span><br><span class="line">CMAKE_&lt;LANG&gt;_IMPLICIT_LINK_DIRECTORIES</span><br><span class="line">CMAKE_&lt;LANG&gt;_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES</span><br><span class="line">CMAKE_&lt;LANG&gt;_IMPLICIT_LINK_LIBRARIES</span><br><span class="line">CMAKE_&lt;LANG&gt;_LIBRARY_ARCHITECTURE</span><br><span class="line">CMAKE_&lt;LANG&gt;_LINKER_PREFERENCE</span><br><span class="line">CMAKE_&lt;LANG&gt;_LINKER_PREFERENCE_PROPAGATES</span><br><span class="line">CMAKE_&lt;LANG&gt;_LINK_EXECUTABLE</span><br><span class="line">CMAKE_&lt;LANG&gt;_OUTPUT_EXTENSION</span><br><span class="line">CMAKE_&lt;LANG&gt;_PLATFORM_ID</span><br><span class="line">CMAKE_&lt;LANG&gt;_SIMULATE_ID</span><br><span class="line">CMAKE_&lt;LANG&gt;_SIMULATE_VERSION</span><br><span class="line">CMAKE_&lt;LANG&gt;_SIZEOF_DATA_PTR</span><br><span class="line">CMAKE_&lt;LANG&gt;_SOURCE_FILE_EXTENSIONS</span><br><span class="line">CMAKE_&lt;LANG&gt;_VISIBILITY_PRESET</span><br><span class="line">CMAKE_ABSOLUTE_DESTINATION_FILES</span><br><span class="line">CMAKE_ANDROID_API</span><br><span class="line">CMAKE_ANDROID_API_MIN</span><br><span class="line">CMAKE_ANDROID_GUI</span><br><span class="line">CMAKE_APPBUNDLE_PATH</span><br><span class="line">CMAKE_AR</span><br><span class="line">CMAKE_ARCHIVE_OUTPUT_DIRECTORY</span><br><span class="line">CMAKE_ARGC</span><br><span class="line">CMAKE_ARGV0</span><br><span class="line">CMAKE_AUTOMOC</span><br><span class="line">CMAKE_AUTOMOC_MOC_OPTIONS</span><br><span class="line">CMAKE_AUTOMOC_RELAXED_MODE</span><br><span class="line">CMAKE_AUTORCC</span><br><span class="line">CMAKE_AUTORCC_OPTIONS</span><br><span class="line">CMAKE_AUTOUIC</span><br><span class="line">CMAKE_AUTOUIC_OPTIONS</span><br><span class="line">CMAKE_BACKWARDS_COMPATIBILITY</span><br><span class="line">CMAKE_BINARY_DIR</span><br><span class="line">CMAKE_BUILD_TOOL</span><br><span class="line">CMAKE_BUILD_TYPE</span><br><span class="line">CMAKE_BUILD_WITH_INSTALL_RPATH</span><br><span class="line">CMAKE_CACHEFILE_DIR</span><br><span class="line">CMAKE_CACHE_MAJOR_VERSION</span><br><span class="line">CMAKE_CACHE_MINOR_VERSION</span><br><span class="line">CMAKE_CACHE_PATCH_VERSION</span><br><span class="line">CMAKE_CFG_INTDIR</span><br><span class="line">CMAKE_CL_64</span><br><span class="line">CMAKE_COLOR_MAKEFILE</span><br><span class="line">CMAKE_COMMAND</span><br><span class="line">CMAKE_COMPILER_2005</span><br><span class="line">CMAKE_COMPILER_IS_GNU&lt;LANG&gt;</span><br><span class="line">CMAKE_COMPILE_PDB_OUTPUT_DIRECTORY</span><br><span class="line">CMAKE_COMPILE_PDB_OUTPUT_DIRECTORY_&lt;CONFIG&gt;</span><br><span class="line">CMAKE_CONFIGURATION_TYPES</span><br><span class="line">CMAKE_CROSSCOMPILING</span><br><span class="line">CMAKE_CTEST_COMMAND</span><br><span class="line">CMAKE_CURRENT_BINARY_DIR</span><br><span class="line">CMAKE_CURRENT_LIST_DIR</span><br><span class="line">CMAKE_CURRENT_LIST_FILE</span><br><span class="line">CMAKE_CURRENT_LIST_LINE</span><br><span class="line">CMAKE_CURRENT_SOURCE_DIR</span><br><span class="line">CMAKE_CXX_COMPILE_FEATURES</span><br><span class="line">CMAKE_CXX_EXTENSIONS</span><br><span class="line">CMAKE_CXX_STANDARD</span><br><span class="line">CMAKE_CXX_STANDARD_REQUIRED</span><br><span class="line">CMAKE_C_COMPILE_FEATURES</span><br><span class="line">CMAKE_C_EXTENSIONS</span><br><span class="line">CMAKE_C_STANDARD</span><br><span class="line">CMAKE_C_STANDARD_REQUIRED</span><br><span class="line">CMAKE_DEBUG_POSTFIX</span><br><span class="line">CMAKE_DEBUG_TARGET_PROPERTIES</span><br><span class="line">CMAKE_DISABLE_FIND_PACKAGE_&lt;PackageName&gt;</span><br><span class="line">CMAKE_DL_LIBS</span><br><span class="line">CMAKE_EDIT_COMMAND</span><br><span class="line">CMAKE_ERROR_DEPRECATED</span><br><span class="line">CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION</span><br><span class="line">CMAKE_EXECUTABLE_SUFFIX</span><br><span class="line">CMAKE_EXE_LINKER_FLAGS</span><br><span class="line">CMAKE_EXE_LINKER_FLAGS_&lt;CONFIG&gt;</span><br><span class="line">CMAKE_EXPORT_NO_PACKAGE_REGISTRY</span><br><span class="line">CMAKE_EXTRA_GENERATOR</span><br><span class="line">CMAKE_EXTRA_SHARED_LIBRARY_SUFFIXES</span><br><span class="line">CMAKE_FIND_LIBRARY_PREFIXES</span><br><span class="line">CMAKE_FIND_LIBRARY_SUFFIXES</span><br><span class="line">CMAKE_FIND_NO_INSTALL_PREFIX</span><br><span class="line">CMAKE_FIND_PACKAGE_NAME</span><br><span class="line">CMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY</span><br><span class="line">CMAKE_FIND_PACKAGE_NO_SYSTEM_PACKAGE_REGISTRY</span><br><span class="line">CMAKE_FIND_PACKAGE_WARN_NO_MODULE</span><br><span class="line">CMAKE_FIND_ROOT_PATH</span><br><span class="line">CMAKE_FIND_ROOT_PATH_MODE_INCLUDE</span><br><span class="line">CMAKE_FIND_ROOT_PATH_MODE_LIBRARY</span><br><span class="line">CMAKE_FIND_ROOT_PATH_MODE_PACKAGE</span><br><span class="line">CMAKE_FIND_ROOT_PATH_MODE_PROGRAM</span><br><span class="line">CMAKE_FRAMEWORK_PATH</span><br><span class="line">CMAKE_Fortran_FORMAT</span><br><span class="line">CMAKE_Fortran_MODDIR_DEFAULT</span><br><span class="line">CMAKE_Fortran_MODDIR_FLAG</span><br><span class="line">CMAKE_Fortran_MODOUT_FLAG</span><br><span class="line">CMAKE_Fortran_MODULE_DIRECTORY</span><br><span class="line">CMAKE_GENERATOR</span><br><span class="line">CMAKE_GENERATOR_PLATFORM</span><br><span class="line">CMAKE_GENERATOR_TOOLSET</span><br><span class="line">CMAKE_GNUtoMS</span><br><span class="line">CMAKE_HOME_DIRECTORY</span><br><span class="line">CMAKE_HOST_APPLE</span><br><span class="line">CMAKE_HOST_SYSTEM</span><br><span class="line">CMAKE_HOST_SYSTEM_NAME</span><br><span class="line">CMAKE_HOST_SYSTEM_PROCESSOR</span><br><span class="line">CMAKE_HOST_SYSTEM_VERSION</span><br><span class="line">CMAKE_HOST_UNIX</span><br><span class="line">CMAKE_HOST_WIN32</span><br><span class="line">CMAKE_IGNORE_PATH</span><br><span class="line">CMAKE_IMPORT_LIBRARY_PREFIX</span><br><span class="line">CMAKE_IMPORT_LIBRARY_SUFFIX</span><br><span class="line">CMAKE_INCLUDE_CURRENT_DIR</span><br><span class="line">CMAKE_INCLUDE_CURRENT_DIR_IN_INTERFACE</span><br><span class="line">CMAKE_INCLUDE_DIRECTORIES_BEFORE</span><br><span class="line">CMAKE_INCLUDE_DIRECTORIES_PROJECT_BEFORE</span><br><span class="line">CMAKE_INCLUDE_PATH</span><br><span class="line">CMAKE_INSTALL_DEFAULT_COMPONENT_NAME</span><br><span class="line">CMAKE_INSTALL_MESSAGE</span><br><span class="line">CMAKE_INSTALL_NAME_DIR</span><br><span class="line">CMAKE_INSTALL_PREFIX</span><br><span class="line">CMAKE_INSTALL_RPATH</span><br><span class="line">CMAKE_INSTALL_RPATH_USE_LINK_PATH</span><br><span class="line">CMAKE_INTERNAL_PLATFORM_ABI</span><br><span class="line">CMAKE_JOB_POOL_COMPILE</span><br><span class="line">CMAKE_JOB_POOL_LINK</span><br><span class="line">CMAKE_LIBRARY_ARCHITECTURE</span><br><span class="line">CMAKE_LIBRARY_ARCHITECTURE_REGEX</span><br><span class="line">CMAKE_LIBRARY_OUTPUT_DIRECTORY</span><br><span class="line">CMAKE_LIBRARY_PATH</span><br><span class="line">CMAKE_LIBRARY_PATH_FLAG</span><br><span class="line">CMAKE_LINK_DEF_FILE_FLAG</span><br><span class="line">CMAKE_LINK_DEPENDS_NO_SHARED</span><br><span class="line">CMAKE_LINK_INTERFACE_LIBRARIES</span><br><span class="line">CMAKE_LINK_LIBRARY_FILE_FLAG</span><br><span class="line">CMAKE_LINK_LIBRARY_FLAG</span><br><span class="line">CMAKE_LINK_LIBRARY_SUFFIX</span><br><span class="line">CMAKE_MACOSX_BUNDLE</span><br><span class="line">CMAKE_MACOSX_RPATH</span><br><span class="line">CMAKE_MAJOR_VERSION</span><br><span class="line">CMAKE_MAKE_PROGRAM</span><br><span class="line">CMAKE_MAP_IMPORTED_CONFIG_&lt;CONFIG&gt;</span><br><span class="line">CMAKE_MATCH_COUNT</span><br><span class="line">CMAKE_MFC_FLAG</span><br><span class="line">CMAKE_MINIMUM_REQUIRED_VERSION</span><br><span class="line">CMAKE_MINOR_VERSION</span><br><span class="line">CMAKE_MODULE_LINKER_FLAGS</span><br><span class="line">CMAKE_MODULE_LINKER_FLAGS_&lt;CONFIG&gt;</span><br><span class="line">CMAKE_MODULE_PATH</span><br><span class="line">CMAKE_NOT_USING_CONFIG_FLAGS</span><br><span class="line">CMAKE_NO_BUILTIN_CHRPATH</span><br><span class="line">CMAKE_NO_SYSTEM_FROM_IMPORTED</span><br><span class="line">CMAKE_OBJECT_PATH_MAX</span><br><span class="line">CMAKE_OSX_ARCHITECTURES</span><br><span class="line">CMAKE_OSX_DEPLOYMENT_TARGET</span><br><span class="line">CMAKE_OSX_SYSROOT</span><br><span class="line">CMAKE_PARENT_LIST_FILE</span><br><span class="line">CMAKE_PATCH_VERSION</span><br><span class="line">CMAKE_PDB_OUTPUT_DIRECTORY</span><br><span class="line">CMAKE_PDB_OUTPUT_DIRECTORY_&lt;CONFIG&gt;</span><br><span class="line">CMAKE_POLICY_DEFAULT_CMP&lt;NNNN&gt;</span><br><span class="line">CMAKE_POLICY_WARNING_CMP&lt;NNNN&gt;</span><br><span class="line">CMAKE_POSITION_INDEPENDENT_CODE</span><br><span class="line">CMAKE_PREFIX_PATH</span><br><span class="line">CMAKE_PROGRAM_PATH</span><br><span class="line">CMAKE_PROJECT_&lt;PROJECT-NAME&gt;_INCLUDE</span><br><span class="line">CMAKE_PROJECT_NAME</span><br><span class="line">CMAKE_RANLIB</span><br><span class="line">CMAKE_ROOT</span><br><span class="line">CMAKE_RUNTIME_OUTPUT_DIRECTORY</span><br><span class="line">CMAKE_SCRIPT_MODE_FILE</span><br><span class="line">CMAKE_SHARED_LIBRARY_PREFIX</span><br><span class="line">CMAKE_SHARED_LIBRARY_SUFFIX</span><br><span class="line">CMAKE_SHARED_LINKER_FLAGS</span><br><span class="line">CMAKE_SHARED_LINKER_FLAGS_&lt;CONFIG&gt;</span><br><span class="line">CMAKE_SHARED_MODULE_PREFIX</span><br><span class="line">CMAKE_SHARED_MODULE_SUFFIX</span><br><span class="line">CMAKE_SIZEOF_VOID_P</span><br><span class="line">CMAKE_SKIP_BUILD_RPATH</span><br><span class="line">CMAKE_SKIP_INSTALL_ALL_DEPENDENCY</span><br><span class="line">CMAKE_SKIP_INSTALL_RPATH</span><br><span class="line">CMAKE_SKIP_INSTALL_RULES</span><br><span class="line">CMAKE_SKIP_RPATH</span><br><span class="line">CMAKE_SOURCE_DIR</span><br><span class="line">CMAKE_STAGING_PREFIX</span><br><span class="line">CMAKE_STANDARD_LIBRARIES</span><br><span class="line">CMAKE_STATIC_LIBRARY_PREFIX</span><br><span class="line">CMAKE_STATIC_LIBRARY_SUFFIX</span><br><span class="line">CMAKE_STATIC_LINKER_FLAGS</span><br><span class="line">CMAKE_STATIC_LINKER_FLAGS_&lt;CONFIG&gt;</span><br><span class="line">CMAKE_SYSROOT</span><br><span class="line">CMAKE_SYSTEM</span><br><span class="line">CMAKE_SYSTEM_IGNORE_PATH</span><br><span class="line">CMAKE_SYSTEM_INCLUDE_PATH</span><br><span class="line">CMAKE_SYSTEM_LIBRARY_PATH</span><br><span class="line">CMAKE_SYSTEM_NAME</span><br><span class="line">CMAKE_SYSTEM_PREFIX_PATH</span><br><span class="line">CMAKE_SYSTEM_PROCESSOR</span><br><span class="line">CMAKE_SYSTEM_PROGRAM_PATH</span><br><span class="line">CMAKE_SYSTEM_VERSION</span><br><span class="line">CMAKE_TOOLCHAIN_FILE</span><br><span class="line">CMAKE_TRY_COMPILE_CONFIGURATION</span><br><span class="line">CMAKE_TWEAK_VERSION</span><br><span class="line">CMAKE_USER_MAKE_RULES_OVERRIDE</span><br><span class="line">CMAKE_USER_MAKE_RULES_OVERRIDE_&lt;LANG&gt;</span><br><span class="line">CMAKE_USE_RELATIVE_PATHS</span><br><span class="line">CMAKE_VERBOSE_MAKEFILE</span><br><span class="line">CMAKE_VERSION</span><br><span class="line">CMAKE_VISIBILITY_INLINES_HIDDEN</span><br><span class="line">CMAKE_VS_DEVENV_COMMAND</span><br><span class="line">CMAKE_VS_INTEL_Fortran_PROJECT_VERSION</span><br><span class="line">CMAKE_VS_MSBUILD_COMMAND</span><br><span class="line">CMAKE_VS_MSDEV_COMMAND</span><br><span class="line">CMAKE_VS_NsightTegra_VERSION</span><br><span class="line">CMAKE_VS_PLATFORM_NAME</span><br><span class="line">CMAKE_VS_PLATFORM_TOOLSET</span><br><span class="line">CMAKE_WARN_DEPRECATED</span><br><span class="line">CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION</span><br><span class="line">CMAKE_WIN32_EXECUTABLE</span><br><span class="line">CMAKE_XCODE_ATTRIBUTE_&lt;an-attribute&gt;</span><br><span class="line">CMAKE_XCODE_PLATFORM_TOOLSET</span><br><span class="line">CPACK_ABSOLUTE_DESTINATION_FILES</span><br><span class="line">CPACK_COMPONENT_INCLUDE_TOPLEVEL_DIRECTORY</span><br><span class="line">CPACK_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION</span><br><span class="line">CPACK_INCLUDE_TOPLEVEL_DIRECTORY</span><br><span class="line">CPACK_INSTALL_SCRIPT</span><br><span class="line">CPACK_PACKAGING_INSTALL_PREFIX</span><br><span class="line">CPACK_SET_DESTDIR</span><br><span class="line">CPACK_WARN_ON_ABSOLUTE_INSTALL_DESTINATION</span><br><span class="line">CTEST_BINARY_DIRECTORY</span><br><span class="line">CTEST_BUILD_COMMAND</span><br><span class="line">CTEST_BUILD_NAME</span><br><span class="line">CTEST_BZR_COMMAND</span><br><span class="line">CTEST_BZR_UPDATE_OPTIONS</span><br><span class="line">CTEST_CHECKOUT_COMMAND</span><br><span class="line">CTEST_CONFIGURATION_TYPE</span><br><span class="line">CTEST_CONFIGURE_COMMAND</span><br><span class="line">CTEST_COVERAGE_COMMAND</span><br><span class="line">CTEST_COVERAGE_EXTRA_FLAGS</span><br><span class="line">CTEST_CURL_OPTIONS</span><br><span class="line">CTEST_CVS_CHECKOUT</span><br><span class="line">CTEST_CVS_COMMAND</span><br><span class="line">CTEST_CVS_UPDATE_OPTIONS</span><br><span class="line">CTEST_DROP_LOCATION</span><br><span class="line">CTEST_DROP_METHOD</span><br><span class="line">CTEST_DROP_SITE</span><br><span class="line">CTEST_DROP_SITE_CDASH</span><br><span class="line">CTEST_DROP_SITE_PASSWORD</span><br><span class="line">CTEST_DROP_SITE_USER</span><br><span class="line">CTEST_GIT_COMMAND</span><br><span class="line">CTEST_GIT_UPDATE_CUSTOM</span><br><span class="line">CTEST_GIT_UPDATE_OPTIONS</span><br><span class="line">CTEST_HG_COMMAND</span><br><span class="line">CTEST_HG_UPDATE_OPTIONS</span><br><span class="line">CTEST_MEMORYCHECK_COMMAND</span><br><span class="line">CTEST_MEMORYCHECK_COMMAND_OPTIONS</span><br><span class="line">CTEST_MEMORYCHECK_SANITIZER_OPTIONS</span><br><span class="line">CTEST_MEMORYCHECK_SUPPRESSIONS_FILE</span><br><span class="line">CTEST_MEMORYCHECK_TYPE</span><br><span class="line">CTEST_NIGHTLY_START_TIME</span><br><span class="line">CTEST_P4_CLIENT</span><br><span class="line">CTEST_P4_COMMAND</span><br><span class="line">CTEST_P4_OPTIONS</span><br><span class="line">CTEST_P4_UPDATE_OPTIONS</span><br><span class="line">CTEST_SCP_COMMAND</span><br><span class="line">CTEST_SITE</span><br><span class="line">CTEST_SOURCE_DIRECTORY</span><br><span class="line">CTEST_SVN_COMMAND</span><br><span class="line">CTEST_SVN_OPTIONS</span><br><span class="line">CTEST_SVN_UPDATE_OPTIONS</span><br><span class="line">CTEST_TEST_TIMEOUT</span><br><span class="line">CTEST_TRIGGER_SITE</span><br><span class="line">CTEST_UPDATE_COMMAND</span><br><span class="line">CTEST_UPDATE_OPTIONS</span><br><span class="line">CTEST_UPDATE_VERSION_ONLY</span><br><span class="line">CTEST_USE_LAUNCHERS</span><br><span class="line">CYGWIN</span><br><span class="line">ENV</span><br><span class="line">EXECUTABLE_OUTPUT_PATH</span><br><span class="line">LIBRARY_OUTPUT_PATH</span><br><span class="line">MINGW</span><br><span class="line">MSVC</span><br><span class="line">MSVC10</span><br><span class="line">MSVC11</span><br><span class="line">MSVC12</span><br><span class="line">MSVC14</span><br><span class="line">MSVC60</span><br><span class="line">MSVC70</span><br><span class="line">MSVC71</span><br><span class="line">MSVC80</span><br><span class="line">MSVC90</span><br><span class="line">MSVC_IDE</span><br><span class="line">MSVC_VERSION</span><br><span class="line">PROJECT_BINARY_DIR</span><br><span class="line">PROJECT_NAME</span><br><span class="line">PROJECT_SOURCE_DIR</span><br><span class="line">PROJECT_VERSION</span><br><span class="line">PROJECT_VERSION_MAJOR</span><br><span class="line">PROJECT_VERSION_MINOR</span><br><span class="line">PROJECT_VERSION_PATCH</span><br><span class="line">PROJECT_VERSION_TWEAK</span><br><span class="line">UNIX</span><br><span class="line">WIN32</span><br><span class="line">WINCE</span><br><span class="line">WINDOWS_PHONE</span><br><span class="line">WINDOWS_STORE</span><br><span class="line">XCODE_VERSION</span><br></pre></td></tr></table></figure>
-<h1 id="七-cmake-项目推荐"><a href="#七-cmake-项目推荐" class="headerlink" title="七 cmake 项目推荐"></a>七 cmake 项目推荐</h1><p>obs-studio 开源推流软件，支持支持直播，录屏<br>github地址</p>
-<p><a href="https://github.com/lumang/tblive" target="_blank" rel="noopener">https://github.com/lumang/tblive</a></p>
-<p><a href="https://github.com/lumang/obs-studio" target="_blank" rel="noopener">https://github.com/lumang/obs-studio</a></p>
-<p>具体项目中的cmake使用说明参考readme中的文件说明 </p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/29/aws-summit/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lumang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lumang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/29/aws-summit/" itemprop="url">aws summit</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-29T23:04:23+08:00">
-                2018-06-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  236
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>2018 年 aws summit上海站<br>第一次参加这么重视的技术峰会，可以说又增加了见识<br>一开始是不准备参加峰会的，因为自己现在的工作内容和技术储备基本没有用武之地</p>
-<p>后来看了下具体内容还是有些有价值的内容的<br>今天的收获还是很多的<br>技术方面了解了最新的iot 技术发展趋势，智能家居发展走势<br>基础运维岗位的职业技能要求<br>另外一方面的是演讲的内容和演讲者<br>演讲者的不同风格<br>严肃型<br>紧张型<br>活泼型<br>这次三种类型都碰到了<br>严肃型<br>    严肃型，全程都很严肃，回答问题也是很严肃，认真<br>紧张型<br>    上台说话，语无伦次，紧张感明显<br>活泼型<br>    台上表现的极为自然，能调动观众积极性</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/16/blue-band-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lumang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lumang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/16/blue-band-1/" itemprop="url">blue band 1</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-16T21:33:44+08:00">
-                2018-06-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  4
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>主控芯片</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/16/2018-half-year/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lumang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lumang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/16/2018-half-year/" itemprop="url">2018 half year </a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-16T13:05:02+08:00">
-                2018-06-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  61
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>2018年过去一半了<br>现在世界杯已经开始<br>搬到新的地方<br>今年的计划完成的如何了</p>
-<blockquote>
-<p>年度计划</p>
-<ul>
-<li>驾校考试 完成</li>
-<li>每个月读书一本 完成</li>
-<li>升职 完成</li>
-<li>加薪 未完成</li>
-</ul>
-</blockquote>
-<p>## </p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/04/make-a-move/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lumang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lumang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/04/make-a-move/" itemprop="url">make a move</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-04T23:45:23+08:00">
-                2018-06-04
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  200
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>今天又一次搬家了<br>来到上海基本上每年都要搬家，以前搬家基本上，两个行李箱，一个整理箱书就完事了，轻轻松松，真正做到了拎包入住，今天拖家带口的，东西太多了，累的两手发酸，头脑昏昏<br>今天想说的问题不是，搬家，而是搬家公司<br>现在搬家领域有两家互联网公司，货拉拉和58速运<br>以前用过58速运服务对于运输服务来说还是不错的，但是前几次基本没有使用人工搬运的服务，一般来说搬运首先是东西不需要，，其次是有同事，以前同学的帮助基本上没有，选择服务方的人工搬运服务，</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/02/setup-mqtt/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lumang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lumang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/02/setup-mqtt/" itemprop="url">setup mqtt</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-02T21:03:26+08:00">
-                2018-06-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  26
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>window 环境下搭建 MQTT 服务器<br>下载Apollo</p>
-<p><a href="http://activemq.apache.org/apollo/download.html" target="_blank" rel="noopener">http://activemq.apache.org/apollo/download.html</a><br>截图</p>
-<p>安装命令</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/02/raspberry-camera/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lumang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lumang">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/02/raspberry-camera/" itemprop="url">raspberry-camera</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-02T15:20:34+08:00">
-                2018-06-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  149
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>1、硬件设备<br>CSI 接口摄像头<br>2、开启树莓派相关模块<br>3、安装相关驱动<br>ls -al /etc<br>添加驱动文件<br>sudo vim /etc/module<br>bcm 2835-v412<br>修改启动配置<br>sudo raspi-config</p>
-<p>查看设备<br>ls -al /dev/ | grep videc </p>
-<p>三 使用树莓派摄像头<br>安装 vlc 传输视频流<br>sudo apt-get update<br>sudo apt-get install vlc –fix-missing<br>sudo apt-get install vlc<br>启动摄像头<br>sudo rspivid -o - -rot 180 -t 0 -fps 30|cvlc -vvv stream:///dev/stdin –sout ‘#standard{access=http,mux=ts,dst=:8080}’ :demux=h264 </p>
-<p>客户机上 VLC，打开流媒体串流<br>输入下面的地址<br><a href="http://192.168.1.129:8080" target="_blank" rel="noopener">http://192.168.1.129:8080</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image"
-                src="/images/avatar.png"
-                alt="lumang" />
-            
-              <p class="site-author-name" itemprop="name">lumang</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">41</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">标签</span>
-                
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-            <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/lumang" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="mailto:luguannan0107@gmail.com" target="_blank" title="E-Mail">
-                      
-                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                  </span>
-                
-            </div>
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">lumang</span>
-
-  
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-area-chart"></i>
-    </span>
-    
-      <span class="post-meta-item-text">Site words total count&#58;</span>
-    
-    <span title="Site words total count">15.8k</span>
-  
-</div>
-
-
-
-
-
-
-
-
-
-<div class="powered-by">
-<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
-  本站访客数:<span id="busuanzi_value_site_uv"></span>
-</span>
-</div>
-
-<div class="theme-info">
-  <div class="powered-by"></div>
-  <span class="post-count">博客全站共15.8k字</span>
-</div>
-
-        
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'categories',
+            TAGS: 'etiquetes',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
 </script>
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-  
-
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <em class="page-title-link" data-url="home">Inici</em>
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            
+
+    
+    
+        
+        
+        <section class="archives-wrap">
+            <div class="archive-year-wrap">
+                <a href="/archives/2019" class="archive-year"><i class="icon fa fa-calendar-o"></i>2019</a>
+            </div>
+            <div class="archives">
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2019/03/11/core-ablity/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2019/03/11/core-ablity/">0</span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            
+            </div>
+            <div class="date"><time datetime="2019-03-11T14:50:23.000Z" itemprop="datePublished">2019-03-11</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2019/03/11/core-ablity/">core ablity</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            核心竞争力-能力的提高提高效率-一次完成-不反复多次思考，理清思路，想好再做
+提高自己的能力同样的时间，积累的能力和经验，自己也积累了经验，但是很杂乱，没有积累性，不是很专一，不够精研做了很多杂事，不够高端高端的做不来，因为日常研究的不够透彻，用的太少，用少就会生疏，生疏就会更加不透彻古语云 拳不离手，曲不离口
+提高赚钱效率万人敌-千人斩第二职业炒股-理财 目标15%的年化收益率，中期目标用利润在
+        </p>
+    </div>
+</article>
+    
+
+    
+    
+        
+            </div></section>
+        
+        
+        <section class="archives-wrap">
+            <div class="archive-year-wrap">
+                <a href="/archives/2018" class="archive-year"><i class="icon fa fa-calendar-o"></i>2018</a>
+            </div>
+            <div class="archives">
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2018/12/29/2018-summery/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2018/12/29/2018-summery/">0</span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            
+            </div>
+            <div class="date"><time datetime="2018-12-29T04:10:50.848Z" itemprop="datePublished">2018-12-29</time></div>
+        </div>
+        
+        <p class="article-excerpt">
+            2018年总结
+今天是2018年最后一个工作日了，事情还是很多，很忙，忙里偷闲抽空来做个年终总结总体来说，今年是收获很大的一年，同时也是遗憾很多的一年。
+
+健康： 每天锻炼15分
+
+年初计划每天锻炼15分钟，坚持了一段时间没有继续，年末体检的时候，有些高血压,今年要严格执行健康计划，说实话最近工作压力很大，身体不健康，一切一场空。2019年注意劳逸结合，注意休息，为自己，为家人。
+
+读书：年初计划
+        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2018/12/08/last-month/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2018/12/08/last-month/">0</span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            
+            </div>
+            <div class="date"><time datetime="2018-12-08T05:04:17.000Z" itemprop="datePublished">2018-12-08</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2018/12/08/last-month/">last month</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            看透事情的本质
+现在很多人包括我自己看事情，不太会仔细分析事情的本质，这里我想把的思考记录下首先我们看先什么是事情的本质，    事务的本质就是事情表象下的深层原因    比如为什么现在抖音，今日头条会火？    为什么美国要针准对中国    为什么要看透事情的本质
+为什么我们会忽略事务的本质    这里说明一点的是探究事情表象是需要我们动脑袋的，要思考。    而思考对于大多数人来说是极为痛苦的
+        </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+    
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2018/10/15/jmeter/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2018/10/15/jmeter/">0</span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            
+            </div>
+            <div class="date"><time datetime="2018-10-15T06:05:38.000Z" itemprop="datePublished">2018-10-15</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2018/10/15/jmeter/">jmeter</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            Jmeter 教程
+入门功能测试，性能测试 压力测试、负载测试
+restful api
+基础    熟练HTTP 协议运行    bin/jmeter.bat
+case
+获取城市代号 http://toy1.weather.com.cn/search?cityname=上海 
+ 从这个请求的response 中获取到上海的城市代码. 比如:
+ 上海的地区代码是101020100
+ 上海动物园的地区
+        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2018/10/14/Uipath-RPA/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2018/10/14/Uipath-RPA/">0</span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            
+            </div>
+            <div class="date"><time datetime="2018-10-14T04:13:20.000Z" itemprop="datePublished">2018-10-14</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2018/10/14/Uipath-RPA/">Uipath RPA</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            RPA
+Uipath 
+项目类型    序列  sequence小项目    流程图 flowChat 中等项目    助理   无人值守 项目    状态机 用于特殊条件出发的大型项目
+数据的读写
+首先    flowchart 中 添加 sequence
+excel application scope 
+read cell 读取元素，输出 string
+write cell 写入元素，输出 s
+        </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+    
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2018/10/11/最好的工作状态/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2018/10/11/最好的工作状态/">0</span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            
+            </div>
+            <div class="date"><time datetime="2018-10-11T03:28:52.000Z" itemprop="datePublished">2018-10-11</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2018/10/11/最好的工作状态/">最好的工作状态</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            保持充足的睡眠
+
+        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2018/08/29/ffmpeg-editor/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2018/08/29/ffmpeg-editor/">0</span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            
+            </div>
+            <div class="date"><time datetime="2018-08-29T09:46:14.000Z" itemprop="datePublished">2018-08-29</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2018/08/29/ffmpeg-editor/">ffmpeg editor</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            1. 导言ffmepg剪切视频，很方便，但是也有很大缺陷：（1）剪切时间点不精确（2）有时剪切的视频开头有黑屏
+造成这些问题的原因是ffmpeg无法seek到非关键帧上。一下本文通过一些参数配置尽可能地减轻以上问题
+2. 基本剪切方法
+ffmpeg -i test.mp4 -ss 10 -t 15 -codec copy cut.mp41参数分析：
+
+
+-i : source-ss:start t
+        </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+    
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2018/08/15/embedded-system-books/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2018/08/15/embedded-system-books/">0</span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            
+            </div>
+            <div class="date"><time datetime="2018-08-15T06:56:47.000Z" itemprop="datePublished">2018-08-15</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2018/08/15/embedded-system-books/">embedded system books</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            《手把手教你学单片机》《stm32权威指南》arm+linux    arm        arm 体系结构    linux
+
+        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2018/07/10/cmake/" class="thumbnail">
+    
+    
+        <span style="background-image:url(./images/cmake.png)" alt="cmake" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2018/07/10/cmake/">0</span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            
+            </div>
+            <div class="date"><time datetime="2018-07-10T05:40:26.000Z" itemprop="datePublished">2018-07-10</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2018/07/10/cmake/">cmake</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            一、 什么是CMake CMake是一个比make更高级的编译配置工具，支持不同平台、不同的编译器，生成相应的Makefile或者vcproj项目（virtual studio 项目文件）。
+ 通过编写CMakeLists.txt，可以控制生成的Makefile，从而控制编译过程。CMake自动生成的Makefile不仅可以通过make命令构建项目生成目标文件，还支持安装（make install
+        </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+    
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2018/06/29/aws-summit/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2018/06/29/aws-summit/">0</span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            
+            </div>
+            <div class="date"><time datetime="2018-06-29T15:04:23.000Z" itemprop="datePublished">2018-06-29</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2018/06/29/aws-summit/">aws summit</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            2018 年 aws summit上海站第一次参加这么重视的技术峰会，可以说又增加了见识一开始是不准备参加峰会的，因为自己现在的工作内容和技术储备基本没有用武之地
+后来看了下具体内容还是有些有价值的内容的今天的收获还是很多的技术方面了解了最新的iot 技术发展趋势，智能家居发展走势基础运维岗位的职业技能要求另外一方面的是演讲的内容和演讲者演讲者的不同风格严肃型紧张型活泼型这次三种类型都碰到了严肃型
+        </p>
+    </div>
+</article>
+    
+
+
+    </div></section>
+
+
+    <nav id="page-nav">
+        <span class="pages">Pàgina 1 de 5</span>
+        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/">&raquo;</a>
+    </nav>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>seguir:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/03/11/core-ablity/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2019/03/11/core-ablity/" class="title">core ablity</a></p>
+                            <p class="item-date"><time datetime="2019-03-11T14:50:23.000Z" itemprop="datePublished">2019-03-11</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/12/29/2018-summery/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/12/29/2018-summery/" class="title"></a></p>
+                            <p class="item-date"><time datetime="2018-12-29T04:10:50.848Z" itemprop="datePublished">2018-12-29</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/12/08/last-month/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/12/08/last-month/" class="title">last month</a></p>
+                            <p class="item-date"><time datetime="2018-12-08T05:04:17.000Z" itemprop="datePublished">2018-12-08</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/10/15/jmeter/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/10/15/jmeter/" class="title">jmeter</a></p>
+                            <p class="item-date"><time datetime="2018-10-15T06:05:38.000Z" itemprop="datePublished">2018-10-15</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/10/14/Uipath-RPA/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/10/14/Uipath-RPA/" class="title">Uipath RPA</a></p>
+                            <p class="item-date"><time datetime="2018-10-14T04:13:20.000Z" itemprop="datePublished">2018-10-14</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">arxius</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">25</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">6</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">etiquetes</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/books/">books</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/感想/">感想</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/提升认知/">提升认知</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">etiqueta cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/books/" style="font-size: 10px;">books</a> <a href="/tags/感想/" style="font-size: 10px;">感想</a> <a href="/tags/提升认知/" style="font-size: 10px;">提升认知</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2019 lumang</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
 </body>
 </html>
