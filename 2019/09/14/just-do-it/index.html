@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="总结," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="1、硬件设备CSI 接口摄像头2、开启树莓派相关模块3、安装相关驱动ls -al /etc添加驱动文件sudo vim /etc/modulebcm 2835-v412修改启动配置sudo raspi-config 查看设备ls -al /dev/ | grep videc  三 使用树莓派摄像头安装 vlc 传输视频流sudo apt-get updatesudo apt-get install">
+<meta name="description" content="每到假期就有了很多时间可以思考总结，今天来说说行动力。 什么是行动力什么是行动力？行动力在我理解去做的能力。过去我的行动力非常差，具体如果差呢？制定了计划，没有完成过，尽管计划列表足够细致，足够短时间完成，都是由于拖延症，直接说法就是[懒]而不去做，这种思维的结果就是很多事情没有做完，该做的事情没有，错过很多机会。 为什么没有行动力为什么我们会不做对自己有好处的事情呢？首先一点是准备充分的思维，做">
+<meta name="keywords" content="总结">
 <meta property="og:type" content="article">
-<meta property="og:title" content="raspberry-camera">
-<meta property="og:url" content="http://lumang.github.io/2018/06/02/raspberry-camera/index.html">
+<meta property="og:title" content="just do it">
+<meta property="og:url" content="http://lumang.github.io/2019/09/14/just-do-it/index.html">
 <meta property="og:site_name" content="lumang">
-<meta property="og:description" content="1、硬件设备CSI 接口摄像头2、开启树莓派相关模块3、安装相关驱动ls -al /etc添加驱动文件sudo vim /etc/modulebcm 2835-v412修改启动配置sudo raspi-config 查看设备ls -al /dev/ | grep videc  三 使用树莓派摄像头安装 vlc 传输视频流sudo apt-get updatesudo apt-get install">
+<meta property="og:description" content="每到假期就有了很多时间可以思考总结，今天来说说行动力。 什么是行动力什么是行动力？行动力在我理解去做的能力。过去我的行动力非常差，具体如果差呢？制定了计划，没有完成过，尽管计划列表足够细致，足够短时间完成，都是由于拖延症，直接说法就是[懒]而不去做，这种思维的结果就是很多事情没有做完，该做的事情没有，错过很多机会。 为什么没有行动力为什么我们会不做对自己有好处的事情呢？首先一点是准备充分的思维，做">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-02T08:40:34.010Z">
+<meta property="og:updated_time" content="2019-09-14T00:46:40.975Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="raspberry-camera">
-<meta name="twitter:description" content="1、硬件设备CSI 接口摄像头2、开启树莓派相关模块3、安装相关驱动ls -al /etc添加驱动文件sudo vim /etc/modulebcm 2835-v412修改启动配置sudo raspi-config 查看设备ls -al /dev/ | grep videc  三 使用树莓派摄像头安装 vlc 传输视频流sudo apt-get updatesudo apt-get install">
+<meta name="twitter:title" content="just do it">
+<meta name="twitter:description" content="每到假期就有了很多时间可以思考总结，今天来说说行动力。 什么是行动力什么是行动力？行动力在我理解去做的能力。过去我的行动力非常差，具体如果差呢？制定了计划，没有完成过，尽管计划列表足够细致，足够短时间完成，都是由于拖延症，直接说法就是[懒]而不去做，这种思维的结果就是很多事情没有做完，该做的事情没有，错过很多机会。 为什么没有行动力为什么我们会不做对自己有好处的事情呢？首先一点是准备充分的思维，做">
 
 
 
@@ -132,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://lumang.github.io/2018/06/02/raspberry-camera/"/>
+  <link rel="canonical" href="http://lumang.github.io/2019/09/14/just-do-it/"/>
 
 
 
 
 
-  <title>raspberry-camera | lumang</title>
+  <title>just do it | lumang</title>
   
 
 
@@ -248,7 +249,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://lumang.github.io/2018/06/02/raspberry-camera/">
+    <link itemprop="mainEntityOfPage" href="http://lumang.github.io/2019/09/14/just-do-it/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="lumang">
@@ -265,7 +266,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">raspberry-camera</h1>
+          <h1 class="post-title" itemprop="name headline">just do it</h1>
         
 
         <div class="post-meta">
@@ -277,8 +278,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-02T15:20:34+08:00">
-                2018-06-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-14T07:22:43+08:00">
+                2019-09-14
               </time>
             
 
@@ -309,7 +310,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  149
+                  462
                 </span>
               
 
@@ -325,7 +326,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -346,10 +347,13 @@
       
 
       
-        <p>1、硬件设备<br>CSI 接口摄像头<br>2、开启树莓派相关模块<br>3、安装相关驱动<br>ls -al /etc<br>添加驱动文件<br>sudo vim /etc/module<br>bcm 2835-v412<br>修改启动配置<br>sudo raspi-config</p>
-<p>查看设备<br>ls -al /dev/ | grep videc </p>
-<p>三 使用树莓派摄像头<br>安装 vlc 传输视频流<br>sudo apt-get update<br>sudo apt-get install vlc –fix-missing<br>sudo apt-get install vlc<br>启动摄像头<br>sudo rspivid -o - -rot 180 -t 0 -fps 30|cvlc -vvv stream:///dev/stdin –sout ‘#standard{access=http,mux=ts,dst=:8080}’ :demux=h264 </p>
-<p>客户机上 VLC，打开流媒体串流<br>输入下面的地址<br><a href="http://192.168.1.129:8080" target="_blank" rel="noopener">http://192.168.1.129:8080</a></p>
+        <p>每到假期就有了很多时间可以思考总结，今天来说说行动力。</p>
+<h1 id="什么是行动力"><a href="#什么是行动力" class="headerlink" title="什么是行动力"></a>什么是行动力</h1><p>什么是行动力？行动力在我理解去做的能力。<br>过去我的行动力非常差，具体如果差呢？制定了计划，没有完成过，尽管计划列表足够细致，足够短时间完成，都是由于拖延症，直接说法就是[懒]而不去做，这种思维的结果就是很多事情没有做完，该做的事情没有，错过很多机会。</p>
+<h1 id="为什么没有行动力"><a href="#为什么没有行动力" class="headerlink" title="为什么没有行动力"></a>为什么没有行动力</h1><p>为什么我们会不做对自己有好处的事情呢？<br>首先一点是准备充分的思维，做什么事情都要准备充分了才去做。</p>
+<p>准备跑步的时候，先要买一套专业的跑步装备，等待装备到的时候，已经不想跑步了。</p>
+<p>第二点就是没有计划性，不能持续做某事情</p>
+<p>做事情三分钟热度，看到某种技术或者运动很酷炫，尝试了之后，没有任何的计划导致对技术一知半解而不能达到精通的程度。</p>
+<h1 id="怎么解决这个问题"><a href="#怎么解决这个问题" class="headerlink" title="怎么解决这个问题"></a>怎么解决这个问题</h1><p>方法：<br>1、做事规划<br>首次做事情不一定要事情有详细规划，先看这件事情是不是值得做，是否可以做。可以拿出时间短暂试试水，如果可行再给自己制定相应的规划​。<br>2、事情要想持续执行，设定一定的奖励<br>比如跑步，一开始不要太专业的跑步设备，简单一双跑鞋，就可以开始跑了，计划里告诉自己，如果跑步坚持3个月，可以给自己一套专业跑步装备作为奖励，这样就有积极持续的动力了。</p>
 
       
     </div>
@@ -407,7 +411,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://lumang.github.io/2018/06/02/raspberry-camera/" title="raspberry-camera">http://lumang.github.io/2018/06/02/raspberry-camera/</a>
+    <a href="http://lumang.github.io/2019/09/14/just-do-it/" title="just do it">http://lumang.github.io/2019/09/14/just-do-it/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -420,6 +424,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/总结/" rel="tag"># 总结</a>
+          
+        </div>
+      
 
       
       
@@ -429,8 +439,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/28/如何带孩子/" rel="next" title="如何带孩子">
-                <i class="fa fa-chevron-left"></i> 如何带孩子
+              <a href="/2019/09/13/中秋记录/" rel="next" title="中秋记录">
+                <i class="fa fa-chevron-left"></i> 中秋记录
               </a>
             
           </div>
@@ -438,10 +448,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/06/02/setup-mqtt/" rel="prev" title="setup mqtt">
-                setup mqtt <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -493,8 +499,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -565,6 +580,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是行动力"><span class="nav-number">1.</span> <span class="nav-text">什么是行动力</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么没有行动力"><span class="nav-number">2.</span> <span class="nav-text">为什么没有行动力</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#怎么解决这个问题"><span class="nav-number">3.</span> <span class="nav-text">怎么解决这个问题</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
